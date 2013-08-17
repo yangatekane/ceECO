@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="opaque_red">#ff0000</color>
+    <color name="white">#f4f4f4</color>
+    <color name="action_bar_color">#222222</color>
+    <color name="transparent_gray">#70000000</color>
+    <color name="background_color">#111111</color>
+    <color name="black">#000</color>
+    <color name="error_red">#ff0000</color>
+    <color name="light_blue">#17A2D7</color>
+    <color name="background_image_color">#292929</color>
+    <color name="button_disabled">#9ca0a2</color>
+    <color name="semi_transparent">#c0000000</color>
+    <color name="profile_text_color">#464646</color>
+    <color name="profile_text_color_light">#5c5c5c</color>
+</resources>

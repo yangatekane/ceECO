@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.htm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name=".CeECOApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ceECOTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity"
+                  android:label="@string/stock_registration"
+                  android:theme="@style/AppTheme"/>
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".NewEquipmentActivity"
+                  android:label="@string/equipment"
+                  android:theme="@style/AppTheme"/>
+        <activity android:name=".ExistingEquipment"
+                  android:label="@string/existing"/>
+        <activity android:name=".RepairsRequisitionActivity"
+                  android:label="@string/repairs"/>
+        <activity android:name=".JobCardsActivity"
+                android:label="@string/jobs"/>
+        <activity
+                android:name=".NewEquipmentReportActivity"
+                android:theme="@style/AppTheme"
+                android:label="New Equipment Report"/>
+    </application>
+
+</manifest>

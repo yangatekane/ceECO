@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Eco-HTM</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_icon">friend icon</string>
+    <string name="user_label">Job Cards</string>
+    <string name="user_label_description">Job cards reconciliation</string>
+    <string name="notification_icon">notification icon</string>
+    <string name="retailer_icon">retailer icon</string>
+    <string name="profile_retailers">Repairs Requisition</string>
+    <string name="profile_categories">New Equipment</string>
+    <string name="category_icon">category icon</string>
+    <string name="profile_categories_description">Tenders and Quotations adverts</string>
+    <string name="profile_retailers_description">Repair request from other departments</string>
+    <string name="notification_label">Existing Equipment</string>
+    <string name="notification_label_description">New equipment registration</string>
+    <string name="panic">Panic</string>
+    <string name="panic_details">The rubber band user has fired the panic signal, please make means to help</string>
+    <string name="vital_signs">Vital Signs</string>
+    <string name="high_risk_area">Risk Area</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="wireless_and_network">Wireless and network</string>
+    <string name="network_required">An active internet connection is required to use this feature, your network is
+        currently connected, do you wish to open \"Wireless and network\"
+    </string>
+    <string name="saving_basic_info">Saving stock information</string>
+    <string name="home_screen">Home</string>
+    <string name="stock_registration">Stock</string>
+    <string name="equipment">New Equipment</string>
+    <string name="existing">Existing Equipment</string>
+    <string name="repairs">Repairs Requisition</string>
+    <string name="jobs">Jobs Cards</string>
+    <string name="stock_list">Stock List</string>
+</resources>

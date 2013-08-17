@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_list">
+        <item>Stock Report</item>
+        <item>Repairs Report</item>
+        <item>Servicing Report</item>
+    </string-array>
+    <string-array name="export">
+        <item>Print</item>
+        <item>Email</item>
+        <item>Save</item>
+    </string-array>
+</resources>

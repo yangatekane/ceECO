@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item
+            android:id="@+id/home_action_bar_cache"
+            android:title="Clear Cache"
+            android:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/home_action_login_logout"
+        android:icon="@drawable/action_stock_reg"
+        android:showAsAction="always"
+        android:enabled="true"    />
+</menu>

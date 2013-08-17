@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_collections_sort_by_size_wht" android:state_enabled="false" />
+    <item android:drawable="@drawable/ic_collections_sort_by_size_bck" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_collections_sort_by_size_wht" />
+</selector>
