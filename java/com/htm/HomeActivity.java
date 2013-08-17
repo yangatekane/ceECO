@@ -52,14 +52,8 @@ public class HomeActivity extends BaseActivity {
             case R.id.action_settings:
                 break;
             case R.id.home_action_bar_cache:
-                try {
-                    getStockManager().clearCache("newStocks");
-                    getNewEquipmentManager().clearCache("recievedEquipment");
-                } catch (IOException e) {
-                    Log.e(TAG,e.getMessage(),e);
-                } catch (ClassNotFoundException e) {
-                    Log.e(TAG,e.getMessage(),e);
-                }
+                getStockManager().clearCache("newStocks");
+                getNewEquipmentManager().clearCache("recievedEquipment");
                 break;
             case R.id.home_action_login_logout:
                 startActivity(new Intent(HomeActivity.this,RegistrationActivity.class));

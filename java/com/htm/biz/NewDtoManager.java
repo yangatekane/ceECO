@@ -20,44 +20,21 @@ import java.util.TreeMap;
 /**
  * Created by yanga on 2013/08/16.
  */
-public class NewDtoManager {
+public class NewDtoManager extends Manager{
     private static final String TAG = NewDtoManager.class.getName();
-    private CeECOApplication application;
-    private static final String EQUIPMENT = "equipment";
+
     public NewDtoManager(CeECOApplication application){
-        this.application = application;
-    }
-    public File getNewEquipmentFile(String stockCategory) {
-        File dir = new File(new File(application.getFilesDir(), URLEncoder.encode(EQUIPMENT)), stockCategory);
-        if (!dir.exists()) {
-            dir.mkdirs();
-        }
-        return new File(dir, "newEquipment");
+        super(application);
     }
     public NewDtos getNewEquipments(String stockCategory){
-        NewDtos newEquipments;
-        File newEquipmentsFile = getNewEquipmentFile(stockCategory);
-        if (!newEquipmentsFile.exists()){
-            newEquipments = new NewDtos();
-        }else {
-            try {
-                FileInputStream fileIn = new FileInputStream(newEquipmentsFile);
-                ObjectInputStream in = new ObjectInputStream(fileIn);
-                newEquipments = (NewDtos) in.readObject();
-                in.close();
-                fileIn.close();
-            } catch (ClassNotFoundException e) {
-                Log.e(TAG, e.getMessage(), e);
-                newEquipments = new NewDtos();
-            } catch (IOException e) {
-                Log.e(TAG, e.getMessage(), e);
-                newEquipments = new NewDtos();
-            }
-            if (newEquipments.getNewEquiments() == null) {
-                newEquipments.setNewEquiments(new TreeMap<String, List<NewDto>>());
-            }
+        try {
+            return (NewDtos)getItem(stockCategory,"newEquipment",NewDtos.class);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
         }
-        return newEquipments;
+        return null;
     }
     public void saveNewEquipment( String stockCategory,String repairType, String serial_number, String device, String make, String model,String supplier) throws IOException {
         NewDtos s = getNewEquipments(stockCategory);
@@ -65,7 +42,7 @@ public class NewDtoManager {
             s.getNewEquiments().put(repairType, new ArrayList<NewDto>());
         }
         s.getNewEquiments().get(repairType).add(new NewDto(serial_number,device,make,model,supplier));
-        File newEquipmentsFile = getNewEquipmentFile(stockCategory);
+        File newEquipmentsFile = getFile(stockCategory, "newEquipment");
         if (!newEquipmentsFile.exists()){
             newEquipmentsFile.createNewFile();
         }
@@ -76,21 +53,7 @@ public class NewDtoManager {
         fileOut.close();
 
     }
-    public void clearCache(String stockCategory) throws IOException, ClassNotFoundException{
-        File cache = getNewEquipmentFile(stockCategory);
-        File cacheDir = application.getCacheDir();
-        if (cache.exists()){
-            delete(cache);
-        }
-        if (cacheDir.exists()){
-            delete(cacheDir);
-        }
-    }
-    private void delete(File fileOrDirectory) {
-        if (fileOrDirectory.isDirectory())
-            for (File child : fileOrDirectory.listFiles())
-                delete(child);
-
-        fileOrDirectory.delete();
+    public void clearCache(String stockCategory){
+        clearCache(stockCategory);
     }
 }

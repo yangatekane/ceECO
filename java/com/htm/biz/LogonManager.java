@@ -5,10 +5,9 @@ import com.htm.CeECOApplication;
 /**
  * Created by yanga on 2013/08/14.
  */
-public class LogonManager {
+public class LogonManager extends Manager{
     private static final String TAG = LogonManager.class.getName();
-    private CeECOApplication application;
     public LogonManager(CeECOApplication application){
-        this.application = application;
+        super(application);
     }
 }

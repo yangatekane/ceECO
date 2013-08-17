@@ -106,6 +106,10 @@ public class RegistrationActivity extends BaseActivity {
                         stockSaved.setMessage("failed to save stock information!");
                         stockSaved.show();
                         Log.e(TAG,e.getMessage(),e);
+                    } catch (InstantiationException e) {
+                        Log.e(TAG,e.getMessage(),e);
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
                     }
                     //progressDialog.show();
                 }
