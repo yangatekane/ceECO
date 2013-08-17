@@ -33,6 +33,8 @@
         <activity android:name=".ExistingEquipment"
                   android:label="@string/existing"/>
         <activity android:name=".RepairsRequisitionActivity"
+                  android:theme="@style/AppTheme"
+                  android:screenOrientation="landscape"
                   android:label="@string/repairs"/>
         <activity android:name=".JobCardsActivity"
                 android:label="@string/jobs"/>
