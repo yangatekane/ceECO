@@ -117,11 +117,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RepairsRequisitionManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RepairsRequisitionManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-              <folding />
+            <state line="19" column="79" selection-start="516" selection-end="516" vertical-scroll-proportion="0.36316696" vertical-offset="131" max-vertical-offset="1098">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +131,7 @@
       <file leaf-file-name="Repair.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="5" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
+            <state line="17" column="18" selection-start="421" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
@@ -144,10 +146,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repairs.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Repairs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="31" selection-start="515" selection-end="515" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="594">
+            <state line="12" column="21" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +205,7 @@
       <file leaf-file-name="StockManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/biz/StockManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="936">
+            <state line="47" column="0" selection-start="1533" selection-end="1882" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -232,9 +234,9 @@
         <option value="$PROJECT_DIR$/java/com/htm/biz/LogonManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/HomeActivity.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/dto/Repair.java" />
         <option value="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
       </list>
     </option>
   </component>
@@ -736,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/StockManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/htm/CeECOApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
@@ -771,23 +766,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="5" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
           <folding />
         </state>
       </provider>
@@ -801,7 +782,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="515" selection-end="515" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="594">
+        <state line="12" column="21" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="421" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/StockManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1533" selection-end="1882" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="79" selection-start="516" selection-end="516" vertical-scroll-proportion="0.36316696" vertical-offset="131" max-vertical-offset="1098">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
