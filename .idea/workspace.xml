@@ -126,20 +126,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repair.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Repair.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="5" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.93939394" vertical-offset="450" max-vertical-offset="1152">
+            <state line="44" column="5" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repairs.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Stocks.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stocks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repairs.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <folding />
+            <state line="19" column="31" selection-start="515" selection-end="515" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="594">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,15 +159,6 @@
         <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogonManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/com/htm/biz/LogonManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="67" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
@@ -217,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml" />
         <option value="$PROJECT_DIR$/res/layout/repairs_requisition.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
@@ -233,6 +234,7 @@
         <option value="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/dto/Repair.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" />
       </list>
     </option>
   </component>
@@ -576,7 +578,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.96147674" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.96147674" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125" sideWeight="0.54735154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3125" sideWeight="0.54735154" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45264846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -675,11 +677,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/drawable/metallic_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-large-land/repairs_requisition.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -781,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
@@ -797,8 +787,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.93939394" vertical-offset="450" max-vertical-offset="1152">
+        <state line="44" column="5" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="515" selection-end="515" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="594">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
