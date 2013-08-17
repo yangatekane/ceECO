@@ -66,6 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_marginTop="8dp"
+                        android:inputType="number"
                         style="@style/NormalText"
                         android:text="021 404"/>
                 <TextView
@@ -93,18 +94,21 @@
                         android:layout_marginTop="40dp"
                         android:orientation="horizontal">
                         <Spinner
+                                android:id="@+id/spin_repair_day"
                                 android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
                                 android:layout_marginTop="20dp"
                                 android:entries="@array/days"
                                 />
                         <Spinner
+                                android:id="@+id/spin_repair_month"
                                 android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
                                 android:layout_marginTop="20dp"
                                 android:entries="@array/months"
                                 />
                         <Spinner
+                                android:id="@+id/spin_repair_year"
                                 android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
                                 android:layout_marginTop="20dp"
@@ -160,7 +164,7 @@
                         style="@style/NormalText"
                         />
                 <EditText
-                        android:id="@+id/edit_section"
+                        android:id="@+id/edit_reportedBy"
                         android:layout_height="wrap_content"
                         android:layout_width="400dp"
                         android:layout_marginTop="8dp"/>
@@ -172,7 +176,7 @@
                         style="@style/NormalText"
                         />
                 <EditText
-                        android:id="@+id/edit_section"
+                        android:id="@+id/edit_receivedby"
                         android:layout_height="wrap_content"
                         android:layout_width="400dp"
                         android:layout_marginTop="8dp"/>
@@ -180,7 +184,7 @@
             <Button
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:id="@+id/btn_save_new_equipment"
+                    android:id="@+id/btn_save_repairs"
                     android:text="Save"
                     android:layout_below="@+id/edit_description"
                     android:layout_alignParentRight="true"

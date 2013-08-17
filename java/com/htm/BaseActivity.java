@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 
 import com.htm.biz.LogonManager;
 import com.htm.biz.NewDtoManager;
+import com.htm.biz.RepairsRequisitionManager;
 import com.htm.biz.StockManager;
 
 /**
@@ -26,5 +27,8 @@ public class BaseActivity extends FragmentActivity {
     }
     public NewDtoManager getNewEquipmentManager(){
         return getCeECOApplication().getNewEquipmentManager();
+    }
+    public RepairsRequisitionManager getRepairsRequisitionManager(){
+        return getCeECOApplication().getRepairsRequisitionManager();
     }
 }

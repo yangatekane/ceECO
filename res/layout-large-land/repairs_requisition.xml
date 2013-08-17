@@ -66,6 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_marginTop="8dp"
+                        android:inputType="number"
                         style="@style/NormalText"
                         android:text="021 404"/>
                 <TextView

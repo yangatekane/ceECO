@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.htm.biz.LogonManager;
 import com.htm.biz.NewDtoManager;
+import com.htm.biz.RepairsRequisitionManager;
 import com.htm.biz.StockManager;
 
 /**
@@ -14,20 +15,25 @@ public class CeECOApplication extends Application {
     private LogonManager logonManager;
     private StockManager stockManager;
     private NewDtoManager newEquipmentManager;
+    private RepairsRequisitionManager repairsRequisitionManager;
     @Override
     public void onCreate() {
         super.onCreate();
         logonManager = new LogonManager(this);
         stockManager = new StockManager(this);
         newEquipmentManager = new NewDtoManager(this);
+        repairsRequisitionManager = new RepairsRequisitionManager(this);
     }
-    LogonManager getLogonManager(){
+    public LogonManager getLogonManager(){
         return logonManager;
     }
-    StockManager getStockManager(){
+    public StockManager getStockManager(){
         return stockManager;
     }
-    NewDtoManager getNewEquipmentManager(){
+    public NewDtoManager getNewEquipmentManager(){
         return newEquipmentManager;
+    }
+    public RepairsRequisitionManager getRepairsRequisitionManager(){
+        return repairsRequisitionManager;
     }
 }
