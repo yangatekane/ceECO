@@ -10,52 +10,6 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:id="@+id/linearLayout">
 
-    <LinearLayout
-            android:layout_height="800dp"
-            android:layout_width="match_parent"
-            android:showDividers="middle"
-            android:dividerPadding="8dp"
-            android:divider="?android:dividerVertical"
-            android:background="@drawable/button_blue">
-
-        <ImageView
-                android:layout_height="match_parent"
-                android:scaleType="center"
-                style="?android:borderlessButtonStyle"
-                android:layout_width="200dp"
-                android:padding="10dp"
-                android:contentDescription="@string/category_icon"
-                android:layout_weight="2"/>
-
-        <LinearLayout
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:orientation="vertical"
-                android:paddingLeft="14dp"
-                android:layout_weight="8">
-
-            <TextView
-                    style="@style/TextAppearanceMedium"
-                    android:textSize="18sp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:textColor="@color/profile_text_color"
-                    android:text="@string/profile_categories"/>
-
-            <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:gravity="center_horizontal">
-
-                <TextView
-                        style="@style/TextAppearanceSmall"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/profile_text_color_light"
-                        android:text="@string/profile_categories_description"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +17,7 @@
             android:orientation="horizontal">
         <LinearLayout
                 android:layout_height="120dp"
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:id="@+id/profile_categories"
                 android:showDividers="middle"
                 android:dividerPadding="8dp"
@@ -75,7 +29,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="center"
                     style="?android:borderlessButtonStyle"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:padding="10dp"
                     android:src="@drawable/ic_safety_wht"
                     android:contentDescription="@string/category_icon"
@@ -107,7 +61,7 @@
 
         <LinearLayout
                 android:layout_height="120dp"
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:id="@+id/profile_retailers"
                 android:showDividers="middle"
                 android:dividerPadding="8dp"
@@ -120,7 +74,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="center"
                     style="?android:borderlessButtonStyle"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_weight="2"
                     android:padding="10dp"
                     android:src="@drawable/ic_hazard_wht"
@@ -157,7 +111,7 @@
             android:orientation="horizontal">
         <LinearLayout
                 android:layout_height="120dp"
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:showDividers="middle"
                 android:dividerPadding="8dp"
                 android:divider="?android:dividerHorizontal"
@@ -201,7 +155,7 @@
 
         <LinearLayout
                 android:layout_height="120dp"
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:id="@+id/profile_user"
                 android:showDividers="middle"
                 android:dividerPadding="8dp"
