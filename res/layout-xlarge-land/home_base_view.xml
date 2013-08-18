@@ -235,8 +235,10 @@
                         android:text="@string/user_label"/>
 
                 <EditText
+                        android:id="@+id/jobcard_requisition"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:inputType="number"
                         android:textColor="@color/profile_text_color_light"
                         android:hint="Enter requisition number"/>
             </LinearLayout>

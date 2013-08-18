@@ -1,21 +1,34 @@
 package com.htm;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.io.IOException;
 
 public class HomeActivity extends BaseActivity {
     private static final String TAG = HomeActivity.class.getName();
+    private EditText repair;
+    public AlertDialog newSave;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
+        repair =(EditText)findViewById(R.id.jobcard_requisition);
+        newSave = new AlertDialog.Builder(this)
+                .setMessage("Please enter the requisition number....")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                    }
+                }).create();
         ((ImageView)findViewById(R.id.new_quipments)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +50,12 @@ public class HomeActivity extends BaseActivity {
         ((ImageView)findViewById(R.id.job_cards)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,JobCardsActivity.class));
+                if (repair.getText().toString().equalsIgnoreCase("")){
+                    newSave.show();
+                }else {
+                    newSave.dismiss();
+                    startActivity(new Intent(HomeActivity.this,JobCardsActivity.class).putExtra("myNumber",Integer.valueOf(repair.getText().toString())));
+                }
             }
         });
     }
@@ -58,6 +76,9 @@ public class HomeActivity extends BaseActivity {
                 break;
             case R.id.home_action_login_logout:
                 startActivity(new Intent(HomeActivity.this,RegistrationActivity.class));
+                break;
+            case R.id.home_action_graphs:
+                startActivity(new Intent(HomeActivity.this,GraphsActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
