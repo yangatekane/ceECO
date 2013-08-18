@@ -69,11 +69,6 @@ public class HomeActivity extends BaseActivity {
         switch (item.getItemId()) {
             case R.id.action_settings:
                 break;
-            case R.id.home_action_bar_cache:
-                getStockManager().clearCache("newStocks");
-                getNewEquipmentManager().clearCache("recievedEquipment");
-                getRepairsRequisitionManager().clearCache("newRepairs");
-                break;
             case R.id.home_action_login_logout:
                 startActivity(new Intent(HomeActivity.this,RegistrationActivity.class));
                 break;

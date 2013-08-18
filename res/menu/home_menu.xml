@@ -4,10 +4,6 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
     <item
-            android:id="@+id/home_action_bar_cache"
-            android:title="Clear Cache"
-            android:showAsAction="collapseActionView"/>
-    <item
             android:id="@+id/home_action_graphs"
             android:icon="@drawable/action_band_latest_diagnostics"
             android:showAsAction="always"
