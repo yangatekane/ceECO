@@ -42,6 +42,10 @@
                 android:name=".NewEquipmentReportActivity"
                 android:theme="@style/AppTheme"
                 android:label="New Equipment Report"/>
+        <activity android:name=".RepairsRequisitionReportActivity"
+                  android:theme="@style/AppTheme"
+                  android:screenOrientation="landscape"
+                  android:label="Repairs Requisition Report"/>
     </application>
 
 </manifest>

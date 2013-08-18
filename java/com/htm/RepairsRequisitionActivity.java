@@ -2,6 +2,7 @@ package com.htm;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
@@ -122,6 +123,7 @@ public class RepairsRequisitionActivity extends BaseActivity {
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            startActivity(new Intent(RepairsRequisitionActivity.this,RepairsRequisitionReportActivity.class));
         }
     }
 }

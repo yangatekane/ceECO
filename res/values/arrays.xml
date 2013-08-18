@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="drawer_list">
-        <item>Stock Report</item>
-        <item>Repairs Report</item>
-        <item>Servicing Report</item>
+        <item>Audit Trail</item>
+        <item>Reports</item>
+        <item>Statistics</item>
+        <item>Analysis</item>
+        <item>BI</item>
     </string-array>
     <string-array name="export">
         <item>Print</item>
