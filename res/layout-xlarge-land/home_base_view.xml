@@ -234,12 +234,11 @@
                         android:textColor="@color/profile_text_color"
                         android:text="@string/user_label"/>
 
-                <TextView
-                        style="@style/TextAppearanceSmall"
+                <EditText
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:textColor="@color/profile_text_color_light"
-                        android:text="@string/user_label_description"/>
+                        android:hint="Enter requisition number"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
