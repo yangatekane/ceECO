@@ -31,9 +31,13 @@
                   android:label="@string/equipment"
                   android:theme="@style/AppTheme"/>
         <activity android:name=".ExistingEquipment"
+                  android:theme="@style/AppTheme"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:screenOrientation="landscape"
                   android:label="@string/existing"/>
         <activity android:name=".RepairsRequisitionActivity"
                   android:theme="@style/AppTheme"
+                  android:configChanges="orientation|keyboardHidden"
                   android:screenOrientation="landscape"
                   android:label="@string/repairs"/>
         <activity android:name=".JobCardsActivity"
@@ -44,8 +48,12 @@
                 android:label="New Equipment Report"/>
         <activity android:name=".RepairsRequisitionReportActivity"
                   android:theme="@style/AppTheme"
+                  android:configChanges="orientation|keyboardHidden"
                   android:screenOrientation="landscape"
                   android:label="Repairs Requisition Report"/>
+        <activity
+                android:name=".SearchRepairsResults"
+                android:label="Search Results"/>
     </application>
 
 </manifest>

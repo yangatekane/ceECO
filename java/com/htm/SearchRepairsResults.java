@@ -10,30 +10,41 @@ import android.widget.ListView;
 
 import com.htm.dto.Repair;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Created by yanga on 2013/08/18.
  */
-public class RepairsRequisitionReportActivity extends BaseActivity {
-    private static final String TAG = RepairsRequisitionReportActivity.class.getName();
+public class SearchRepairsResults extends BaseActivity {
     private ListView listView;
     private RepairRequisitionDetailAdapter repairRequisitionDetailAdapter;
+    private List<Repair> resultList= new LinkedList<Repair>();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.repairs_requisition_report);
-        listView = (ListView) findViewById(R.id.repair_requisition_list);
+        setContentView(R.layout.search_list_repairs_detail);
+        List<Repair> list = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned");
+        for (Repair repair:list){
+            if (getIntent().getIntExtra("number",0)==repair.getRequisitionNumber()){
+                resultList.add(repair);
+            }
+        }
+        listView = (ListView) findViewById(R.id.search_repairs_list);
         repairRequisitionDetailAdapter = new RepairRequisitionDetailAdapter();
         listView.setAdapter(repairRequisitionDetailAdapter);
     }
-    private class RepairRequisitionDetailAdapter extends BaseAdapter{
+
+    private class RepairRequisitionDetailAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").size();
+            return resultList.size();
         }
 
         @Override
         public Repair getItem(int i) {
-            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").get(i);
+
+            return resultList.get(i);
         }
 
         @Override
@@ -46,6 +57,7 @@ public class RepairsRequisitionReportActivity extends BaseActivity {
             if (view == null){
                 view = getLayoutInflater().inflate(R.layout.repairs_list_report_detail,null);
             }
+
             ((EditText)view.findViewById(R.id.edit_requisition_number_report)).setText(String.valueOf(getItem(i).getRequisitionNumber()));
             ((EditText)view.findViewById(R.id.edit_section_report)).setText(getItem(i).getSection());
             ((EditText)view.findViewById(R.id.edit_telephone_number_report)).setText(getItem(i).getTel());
@@ -55,6 +67,7 @@ public class RepairsRequisitionReportActivity extends BaseActivity {
             ((EditText)view.findViewById(R.id.edit_description_report)).setText(getItem(i).getDescription());
             ((EditText)view.findViewById(R.id.edit_reportedBy_report)).setText(getItem(i).getReportedBy());
             ((EditText)view.findViewById(R.id.edit_receivedby__report)).setText(getItem(i).getReceivedBy());
+
             return view;
         }
     }

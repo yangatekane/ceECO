@@ -27,14 +27,28 @@ public class NewDtoManager extends Manager{
         super(application);
     }
     public NewDtos getNewEquipments(String stockCategory){
-        try {
-            return (NewDtos)getItem(stockCategory,"newEquipment",NewDtos.class);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
+        NewDtos newDtos=new NewDtos();
+        File objectsFile = getFile(stockCategory,"newEquipment");
+        if (!objectsFile.exists()){
+            newDtos = new NewDtos();
+        }else {
+            try {
+                FileInputStream fileIn = new FileInputStream(objectsFile);
+                ObjectInputStream in = new ObjectInputStream(fileIn);
+                newDtos = (NewDtos)in.readObject();
+                in.close();
+                fileIn.close();
+
+            } catch (ClassNotFoundException e) {
+                Log.e(TAG, e.getMessage(), e);
+            } catch (IOException e) {
+                Log.e(TAG, e.getMessage(), e);
+            }
         }
-        return null;
+        if (newDtos.getNewEquiments()==null){
+            newDtos.setNewEquiments(new TreeMap<String, List<NewDto>>());
+        }
+        return newDtos;
     }
     public void saveNewEquipment( String stockCategory,String repairType, String serial_number, String device, String make, String model,String supplier) throws IOException {
         NewDtos s = getNewEquipments(stockCategory);

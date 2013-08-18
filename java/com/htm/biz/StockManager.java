@@ -29,7 +29,7 @@ public class StockManager extends Manager{
 
 
     public void saveStock( String stockCategory,String repairType, String part_number, String description, int quantity, String amount) throws IOException, InstantiationException, IllegalAccessException {
-        Stocks s = (Stocks) getItem(stockCategory, "stocks", Stocks.class);
+        Stocks s = getStocks(stockCategory);
         if (!s.getStocks().containsKey(repairType)){
             s.getStocks().put(repairType,new ArrayList<Stock>());
         }
@@ -46,14 +46,28 @@ public class StockManager extends Manager{
 
     }
     public Stocks getStocks(String stockCategory){
-        try {
-            return (Stocks) getItem(stockCategory, "stocks", Stocks.class);
-        } catch (IllegalAccessException e) {
-            Log.e(TAG,e.getMessage(),e);
-        } catch (InstantiationException e) {
-            Log.e(TAG,e.getMessage(),e);
+        Stocks stocks=new Stocks();
+        File objectsFile = getFile(stockCategory,"stocks");
+        if (!objectsFile.exists()){
+            stocks = new Stocks();
+        }else {
+            try {
+                FileInputStream fileIn = new FileInputStream(objectsFile);
+                ObjectInputStream in = new ObjectInputStream(fileIn);
+                stocks = (Stocks)in.readObject();
+                in.close();
+                fileIn.close();
+
+            } catch (ClassNotFoundException e) {
+                Log.e(TAG, e.getMessage(), e);
+            } catch (IOException e) {
+                Log.e(TAG, e.getMessage(), e);
+            }
         }
-        return null;
+        if (stocks.getStocks()==null){
+            stocks.setStocks(new TreeMap<String, List<Stock>>());
+        }
+        return stocks;
     }
     public void clearCache(String stockCategory){
         clearCache(stockCategory);

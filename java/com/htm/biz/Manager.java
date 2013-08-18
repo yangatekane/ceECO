@@ -32,27 +32,6 @@ public abstract class Manager {
         }
         return new File(dir, fileName);
     }
-    public Serializable getItem(String stockCategory,String filename,Class cClass) throws IllegalAccessException, InstantiationException {
-        Serializable content=null;
-        File objectsFile = getFile(stockCategory,filename);
-        if (!objectsFile.exists()){
-                content = (Serializable)cClass.newInstance();
-        }else {
-            try {
-                FileInputStream fileIn = new FileInputStream(objectsFile);
-                ObjectInputStream in = new ObjectInputStream(fileIn);
-                content = (Serializable)cClass.cast(in.readObject());
-                in.close();
-                fileIn.close();
-
-            } catch (ClassNotFoundException e) {
-                Log.e(TAG, e.getMessage(), e);
-            } catch (IOException e) {
-                Log.e(TAG, e.getMessage(), e);
-            }
-        }
-        return content;
-    }
     public void clearCache(String stockCategory,String filename) throws IOException, ClassNotFoundException{
         File cache = getFile(stockCategory,filename);
         File cacheDir = application.getCacheDir();

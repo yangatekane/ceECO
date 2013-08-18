@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          android:showAsAction="never" />
+    <item
+            android:id="@+id/home_action_repairs_report"
+            android:icon="@drawable/action_band_diagnostic_reports"
+            android:showAsAction="always"
+            android:enabled="true"    />
 </menu>

@@ -88,7 +88,7 @@ public class RepairsRequisitionActivity extends BaseActivity {
         ((Button)findViewById(R.id.btn_save_repairs)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String date = day.toString()+" "+month.toString()+" "+year.toString();
+                String date = String.valueOf(day.getSelectedItem())+" "+String.valueOf(month.getSelectedItem())+" "+String.valueOf(year.getSelectedItem());
                 try {
                     getRepairsRequisitionManager().saveRequisitions("newRepairs","commissioned",Integer.valueOf(requisitionNumber.getText().toString()),
                     tel.getText().toString(),date,section.getText().toString(),department.getText().toString(),floor.getText().toString(),
@@ -126,4 +126,6 @@ public class RepairsRequisitionActivity extends BaseActivity {
             startActivity(new Intent(RepairsRequisitionActivity.this,RepairsRequisitionReportActivity.class));
         }
     }
+
+
 }

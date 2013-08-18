@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.DrawerLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="20dp"
         android:background="@drawable/drawer_background"
         tools:context=".RegistrationActivity"
         android:id="@+id/drawer_layout">
@@ -28,10 +29,12 @@
                         android:layout_marginTop="8dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_requisition_number_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:enabled="false"
+                        style="@style/NormalText"
                         android:layout_marginTop="8dp"/>
                 <TextView
                         android:layout_height="wrap_content"
@@ -40,10 +43,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_section_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        style="@style/NormalText"
+                        android:enabled="false"
                         android:layout_marginTop="8dp"/>
             </LinearLayout>
             <LinearLayout
@@ -60,12 +65,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_telephone_number_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_marginTop="8dp"
-                        style="@style/NormalText"
+                        android:enabled="false"
                         android:text="021 404"/>
                 <TextView
                         android:layout_height="wrap_content"
@@ -74,10 +79,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_department_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:enabled="false"
+                        style="@style/NormalText"
                         android:layout_marginTop="8dp"/>
             </LinearLayout>
             <LinearLayout
@@ -93,10 +100,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_date_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:enabled="false"
+                        style="@style/NormalText"
                         android:layout_marginTop="8dp"/>
                 <TextView
                         android:layout_height="wrap_content"
@@ -105,10 +114,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_floor_report"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:enabled="false"
+                        style="@style/NormalText"
                         android:layout_marginTop="8dp"/>
             </LinearLayout>
             <TextView
@@ -119,23 +130,27 @@
                     android:layout_marginLeft="80dp"
                     android:layout_alignParentLeft="true"
                     android:layout_marginTop="30dp"
-                    android:text="Please carry out the following work:"
+                    android:text="Work carried out:"
                     style="@style/HeadingText"/>
-            <TextView
+            <EditText
                     android:id="@+id/edit_description_report"
                     android:layout_width="1100dp"
-                    android:layout_height="300dp"
+                    android:layout_height="200dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginLeft="80dp"
                     android:padding="8dp"
+                    style="@style/NormalText"
                     android:layout_below="@+id/requisition_description"
+                    android:enabled="false"
                     android:gravity="top"
                     android:background="@drawable/metallic_background"/>
             <LinearLayout
+                    android:id="@+id/eletronic_sig"
                     android:layout_height="wrap_content"
                     android:layout_width="1100dp"
                     android:orientation="horizontal"
                     android:layout_alignParentLeft="true"
+                    android:padding="8dp"
                     android:layout_below="@+id/edit_description_report"
                     android:layout_marginLeft="80dp">
                 <TextView
@@ -145,10 +160,12 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_reportedBy_report"
                         android:layout_height="wrap_content"
                         android:layout_width="400dp"
+                        android:enabled="false"
+                        style="@style/NormalText"
                         android:layout_marginTop="8dp"/>
                 <TextView
                         android:layout_height="wrap_content"
@@ -157,12 +174,22 @@
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
                         />
-                <TextView
+                <EditText
                         android:id="@+id/edit_receivedby__report"
                         android:layout_height="wrap_content"
+                        style="@style/NormalText"
                         android:layout_width="400dp"
+                        android:enabled="false"
                         android:layout_marginTop="8dp"/>
             </LinearLayout>
+            <TextView
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/eletronic_sig"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="@style/HeadingText"
+                    android:text="End of Requisition"/>
         </RelativeLayout>
     </ViewFlipper>
-</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
