@@ -15,6 +15,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="androidplot-core-0.6.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="core" />
   </component>
 </module>
 

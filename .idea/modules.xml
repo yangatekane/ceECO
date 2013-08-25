@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ceECO.iml" filepath="$PROJECT_DIR$/ceECO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2/core/core.iml" filepath="$PROJECT_DIR$/../zxing-2.2/core/core.iml" />
     </modules>
   </component>
 </project>

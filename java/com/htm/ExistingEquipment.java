@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+
 /**
  * Created by yanga on 2013/08/15.
  */
@@ -22,7 +23,8 @@ public class ExistingEquipment extends BaseActivity {
         ((Button)findViewById(R.id.btn_scan_barcode)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivityForResult(new Intent(MediaStore.ACTION_IMAGE_CAPTURE), 1);
+                //startActivityForResult(new Intent(MediaStore.ACTION_IMAGE_CAPTURE), 1);
+                startActivity(new Intent(ExistingEquipment.this, CaptureActivity.class));
             }
         });
         final EditText barcodeNumber = (EditText) findViewById(R.id.barcode_requisition_number);
@@ -35,12 +37,11 @@ public class ExistingEquipment extends BaseActivity {
         });
     }
 
-    @Override
+   @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK){
             Bundle extras = data.getExtras();
-            mImageBitmap = (Bitmap) extras.get("data");
+            mImageBitmap = (Bitmap) extras.get("bitmap");
             imageView.setImageBitmap(mImageBitmap);
-        }
     }
+
 }
