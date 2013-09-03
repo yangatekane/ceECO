@@ -26,14 +26,17 @@ public class RepairsRequisitionManager extends Manager {
     public RepairsRequisitionManager(CeECOApplication application) {
         super(application);
     }
-    public void saveRequisitions( String stockCategory,String repairType, int requisitionNumber, String tel, String date, String section,
+    public void saveRequisitions( String stockCategory,String repairType,
+                                  String serialNo,String make,String model,
+                                  int requisitionNumber,
+                                  String tel, String date, String section,
                                   String department,String floor,String description,
                                   String reportedBy,String receivedBy) throws IOException, InstantiationException, IllegalAccessException {
         Repairs s = getRequisitions(stockCategory);
         if (!s.getRepairs().containsKey(repairType)){
             s.getRepairs().put(repairType, new ArrayList<Repair>());
         }
-        s.getRepairs().get(repairType).add(new Repair(requisitionNumber,tel,date,section,
+        s.getRepairs().get(repairType).add(new Repair(serialNo,make,model,requisitionNumber,tel,date,section,
                                                department,floor,description,reportedBy,receivedBy));
         File stockFile = getFile(stockCategory, fileName);
         if (!stockFile.exists()){

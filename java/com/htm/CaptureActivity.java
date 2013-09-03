@@ -528,8 +528,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     metaTextView.setVisibility(View.GONE);
     metaTextViewLabel.setVisibility(View.GONE);
     Map<ResultMetadataType,Object> metadata = rawResult.getResultMetadata();
-    if (metadata != null) {
       StringBuilder metadataText = new StringBuilder(20);
+    if (metadata != null) {
+
       for (Map.Entry<ResultMetadataType,Object> entry : metadata.entrySet()) {
         if (DISPLAYABLE_METADATA_TYPES.contains(entry.getKey())) {
           metadataText.append(entry.getValue()).append('\n');
@@ -561,7 +562,11 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
               this);
     }
 
-    startActivityForResult(new Intent(CaptureActivity.this,ExistingEquipment.class).putExtra("bitmap",barcode),2);
+    setResult(RESULT_FIRST_USER,new Intent().
+                  putExtra("bitmap",barcode).
+                  putExtra("format",rawResult.getBarcodeFormat().toString()).
+                  putExtra("content",displayContents));
+    finish();
     int buttonCount = resultHandler.getButtonCount();
     ViewGroup buttonView = (ViewGroup) findViewById(R.id.result_button_view);
     buttonView.requestFocus();

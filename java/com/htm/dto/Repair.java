@@ -6,6 +6,9 @@ import java.io.Serializable;
  * Created by yanga on 2013/08/17.
  */
 public class Repair implements Serializable{
+    private String serialNo;
+    private String make;
+    private String model;
     private int requisitionNumber;
     private String tel;
     private String date;
@@ -15,9 +18,15 @@ public class Repair implements Serializable{
     private String department;
     private String reportedBy;
     private String receivedBy;
-    public Repair(int requisitionNumber, String tel, String date, String section,
+    private String barcode;
+
+    public Repair(String serialNo, String make, String model,
+                  int requisitionNumber, String tel, String date, String section,
                  String department,String floor,String description,
                  String reportedBy,String receivedBy){
+                 this.serialNo = serialNo;
+                 this.make = make;
+                 this.model = model;
                  this.requisitionNumber = requisitionNumber;
                  this.date = date;
                  this.tel = tel;
@@ -28,6 +37,19 @@ public class Repair implements Serializable{
                  this.reportedBy = reportedBy;
                  this.receivedBy = receivedBy;
     }
+
+    public String getSerialNo() {
+        return serialNo;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
     public int getRequisitionNumber(){
         return requisitionNumber;
     }
@@ -54,5 +76,13 @@ public class Repair implements Serializable{
     }
     public String getReceivedBy(){
         return receivedBy;
+    }
+
+    public String getBarcode() {
+        return barcode;
+    }
+
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
     }
 }

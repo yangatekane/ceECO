@@ -16,6 +16,7 @@ import android.widget.ImageView;
 public class ExistingEquipment extends BaseActivity {
     private Bitmap mImageBitmap;
     private ImageView imageView;
+    private EditText barcodeNumber;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.existing_equipment);
@@ -23,11 +24,10 @@ public class ExistingEquipment extends BaseActivity {
         ((Button)findViewById(R.id.btn_scan_barcode)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivityForResult(new Intent(MediaStore.ACTION_IMAGE_CAPTURE), 1);
-                startActivity(new Intent(ExistingEquipment.this, CaptureActivity.class));
+                startActivityForResult(new Intent(ExistingEquipment.this, CaptureActivity.class),3);
             }
         });
-        final EditText barcodeNumber = (EditText) findViewById(R.id.barcode_requisition_number);
+        barcodeNumber = (EditText) findViewById(R.id.barcode_requisition_number);
         ((Button) findViewById(R.id.btn_repairs)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +40,11 @@ public class ExistingEquipment extends BaseActivity {
    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             Bundle extras = data.getExtras();
-            mImageBitmap = (Bitmap) extras.get("bitmap");
-            imageView.setImageBitmap(mImageBitmap);
+            if (resultCode == RESULT_FIRST_USER){
+                mImageBitmap = (Bitmap) extras.get("bitmap");
+                imageView.setImageBitmap(mImageBitmap);
+                barcodeNumber.setText(extras.getString("content"));
+            }
     }
 
 }

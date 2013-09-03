@@ -29,10 +29,63 @@ public class RepairsRequisitionActivity extends BaseActivity {
     private DrawerLayout drawerLayout;
     private ListView drawerList;
     private ActionBarDrawerToggle drawerToggle;
+
+    private EditText serialNum;
+    private EditText make;
+    private EditText model;
+    private EditText requisitionNumber;
+    private EditText section;
+    private EditText tel;
+    private EditText department;
+    private EditText floor;
+    private Spinner day;
+    private Spinner month;
+    private Spinner year;
+    private EditText description;
+    private EditText reportedBy;
+    private EditText receivedBy;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.repairs_requisition);
 
+        setupDrawer();
+        setup();
+        repairSaved = new AlertDialog.Builder(this)
+                .setMessage("Repair requisition information saved....")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        destruct();
+                        repairSaved.dismiss();
+                    }
+                }).create();
+        ((Button)findViewById(R.id.btn_save_repairs)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String date = String.valueOf(day.getSelectedItem())+" "+String.valueOf(month.getSelectedItem())+" "+String.valueOf(year.getSelectedItem());
+                try {
+                    getRepairsRequisitionManager().saveRequisitions("newRepairs","commissioned",
+                    serialNum.getText().toString(),make.getText().toString(),
+                    model.getText().toString(),
+                    Integer.valueOf(requisitionNumber.getText().toString()),
+                    tel.getText().toString(),date,section.getText().toString(),department.getText().toString(),floor.getText().toString(),
+                    description.getText().toString(),reportedBy.getText().toString(),receivedBy.getText().toString());
+                    repairSaved.show();
+                } catch (IOException e) {
+                    Log.e(TAG,e.getMessage(),e);
+                    repairSaved.dismiss();
+                } catch (InstantiationException e) {
+                    Log.e(TAG, e.getMessage(), e);
+                    repairSaved.dismiss();
+                } catch (IllegalAccessException e) {
+                    Log.e(TAG, e.getMessage(), e);
+                    repairSaved.dismiss();
+                }
+            }
+        });
+    }
+
+    private void setupDrawer() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerList = (ListView) findViewById(R.id.left_drawer);
         drawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
@@ -57,56 +110,39 @@ public class RepairsRequisitionActivity extends BaseActivity {
             }
         };
         drawerLayout.setDrawerListener(drawerToggle);
-
-        final EditText requisitionNumber = (EditText) findViewById(R.id.edit_requisition_number);
-        final EditText section = (EditText) findViewById(R.id.edit_section);
-        final EditText tel = (EditText) findViewById(R.id.edit_telephone_number);
-        final EditText department = (EditText) findViewById(R.id.edit_department);
-        final EditText floor = (EditText) findViewById(R.id.edit_floor);
-        final Spinner day = (Spinner) findViewById(R.id.spin_repair_day);
-        final Spinner month = (Spinner) findViewById(R.id.spin_repair_month);
-        final Spinner year = (Spinner) findViewById(R.id.spin_repair_year);
-        final EditText description = (EditText) findViewById(R.id.edit_description);
-        final EditText reportedBy = (EditText)findViewById(R.id.edit_reportedBy);
-        final EditText receivedBy = (EditText)findViewById(R.id.edit_receivedby);
-        repairSaved = new AlertDialog.Builder(this)
-                .setMessage("Repair requisition information saved....")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        requisitionNumber.setText("");
-                        section.setText("");
-                        tel.setText("");
-                        department.setText("");
-                        floor.setText("");
-                        reportedBy.setText("");
-                        receivedBy.setText("");
-                        description.setText("");
-                        repairSaved.dismiss();
-                    }
-                }).create();
-        ((Button)findViewById(R.id.btn_save_repairs)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String date = String.valueOf(day.getSelectedItem())+" "+String.valueOf(month.getSelectedItem())+" "+String.valueOf(year.getSelectedItem());
-                try {
-                    getRepairsRequisitionManager().saveRequisitions("newRepairs","commissioned",Integer.valueOf(requisitionNumber.getText().toString()),
-                    tel.getText().toString(),date,section.getText().toString(),department.getText().toString(),floor.getText().toString(),
-                    description.getText().toString(),reportedBy.getText().toString(),receivedBy.getText().toString());
-                    repairSaved.show();
-                } catch (IOException e) {
-                    Log.e(TAG,e.getMessage(),e);
-                    repairSaved.dismiss();
-                } catch (InstantiationException e) {
-                    Log.e(TAG, e.getMessage(), e);
-                    repairSaved.dismiss();
-                } catch (IllegalAccessException e) {
-                    Log.e(TAG, e.getMessage(), e);
-                    repairSaved.dismiss();
-                }
-            }
-        });
     }
+
+    private void destruct() {
+        serialNum.setText("");
+        make.setText("");
+        model.setText("");
+        requisitionNumber.setText("");
+        section.setText("");
+        tel.setText("");
+        department.setText("");
+        floor.setText("");
+        reportedBy.setText("");
+        receivedBy.setText("");
+        description.setText("");
+    }
+
+    private void setup() {
+        serialNum = (EditText) findViewById(R.id.edit_serial_number);
+        make = (EditText) findViewById(R.id.edit_make);
+        model = (EditText) findViewById(R.id.edit_model);
+        requisitionNumber = (EditText) findViewById(R.id.edit_requisition_number);
+        section = (EditText) findViewById(R.id.edit_section);
+        tel = (EditText) findViewById(R.id.edit_telephone_number);
+        department = (EditText) findViewById(R.id.edit_department);
+        floor = (EditText) findViewById(R.id.edit_floor);
+        day = (Spinner) findViewById(R.id.spin_repair_day);
+        month = (Spinner) findViewById(R.id.spin_repair_month);
+        year = (Spinner) findViewById(R.id.spin_repair_year);
+        description = (EditText) findViewById(R.id.edit_description);
+        reportedBy = (EditText)findViewById(R.id.edit_reportedBy);
+        receivedBy = (EditText)findViewById(R.id.edit_receivedby);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);

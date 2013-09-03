@@ -11,6 +11,7 @@ public class Stock implements Serializable {
     private String description;
     private int quantity;
     private String amount;
+    private String barcode;
     public Stock(String part_number, String description, int quantity, String amount){
         this.part_number = part_number;
         this.description = description;
@@ -28,5 +29,13 @@ public class Stock implements Serializable {
     }
     public String getAmount(){
         return amount;
+    }
+
+    public String getBarcode() {
+        return barcode;
+    }
+
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
     }
 }

@@ -146,4 +146,10 @@
         <item>@string/preferences_front_light_auto</item>
         <item>@string/preferences_front_light_off</item>
     </string-array>
+    <string-array name="job_status">
+        <item>Complete</item>
+        <item>Incomplete</item>
+        <item>Awaiting Spares</item>
+        <item>Awaiting Supplier</item>
+    </string-array>
 </resources>
