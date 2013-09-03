@@ -15,9 +15,12 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import com.htm.dto.Repair;
+import com.htm.dto.Stock;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -33,6 +36,8 @@ public class SearchJobsResults extends BaseActivity {
     private List<Repair> resultList= new LinkedList<Repair>();
     private ViewFlipper viewFlipper;
     public AlertDialog stockSave;
+    List<Stock> allstock = new LinkedList<Stock>();
+    private JobCardAdapter jobCardAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_list_job_detail);
@@ -42,23 +47,26 @@ public class SearchJobsResults extends BaseActivity {
                 resultList.add(repair);
             }
         }
+        ((EditText)findViewById(R.id.edit_serial_no)).setText(resultList.get(0).getSerialNo());
+        ((EditText)findViewById(R.id.edit_srequisition_no)).setText(String.valueOf(resultList.get(0).getRequisitionNumber()));
+        ((EditText)findViewById(R.id.edit_make)).setText(resultList.get(0).getMake());
+        ((EditText)findViewById(R.id.edit_model)).setText(resultList.get(0).getModel());
+        ((EditText)findViewById(R.id.edit_customer)).setText(resultList.get(0).getReceivedBy());
+        ((EditText)findViewById(R.id.edit_contact_person)).setText(resultList.get(0).getReportedBy());
+        for (Stock s:getStockManager().getStocks("newStocks").getStocks().get("commissioned")){
+            allstock.add(s);
+        }
         listView = (ListView) findViewById(R.id.search_job_list);
         repairRequisitionDetailAdapter = new RepairRequisitionDetailAdapter();
         listView.setAdapter(repairRequisitionDetailAdapter);
         viewFlipper = (ViewFlipper)findViewById(R.id.job_pager);
-        final EditText partNumber = (EditText) findViewById(R.id.edit_part_number);
-        final EditText description = (EditText) findViewById(R.id.edit_description);
-        final EditText quantity = (EditText) findViewById(R.id.edit_quantity);
-        final EditText amount = (EditText) findViewById(R.id.edit_amount);
+        final Spinner stocks = ((Spinner)findViewById(R.id.spin_stocks));
+        stocks.setAdapter(new EquipmentDetailAdapter());
         stockSave = new AlertDialog.Builder(this)
                 .setMessage("Stock information saved....")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        partNumber.setText("");
-                        description.setText("");
-                        quantity.setText("");
-                        amount.setText("");
                         stockSave.dismiss();
                     }
                 }).create();
@@ -66,20 +74,11 @@ public class SearchJobsResults extends BaseActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    if (partNumber.getText().toString().equalsIgnoreCase("")||
-                            description.getText().toString().equalsIgnoreCase("")||
-                            quantity.getText().toString().equalsIgnoreCase("")||
-                            amount.getText().toString().equalsIgnoreCase("")){
-                        stockSave.setMessage("Please fill in all the fields");
-                        stockSave.show();
-                    }else {
-                        double total = Double.valueOf(amount.getText().toString())*Double.valueOf(quantity.getText().toString());
-                        getStockManager().saveStock("newStocks","commissioned",partNumber.getText().toString(),
-                                description.getText().toString(),
-                                -Integer.valueOf(quantity.getText().toString()),"R "+String.valueOf(total));
+                        getStockManager().saveJobs("newJobs","commissioned",allstock.get(stocks.getSelectedItemPosition()).getPartNumber(),
+                                allstock.get(stocks.getSelectedItemPosition()).getDescription(),
+                                -allstock.get(stocks.getSelectedItemPosition()).getQuantity(),allstock.get(stocks.getSelectedItemPosition()).getAmount());
                         stockSave.setMessage("Stock information saved....");
                         stockSave.show();
-                    }
                 } catch (IOException e) {
                     stockSave.setMessage("failed to save stock information!");
                     stockSave.show();
@@ -93,6 +92,12 @@ public class SearchJobsResults extends BaseActivity {
             }
         });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.job_menu, menu);
@@ -143,6 +148,64 @@ public class SearchJobsResults extends BaseActivity {
             ((EditText)view.findViewById(R.id.edit_reportedBy_report)).setText(getItem(i).getReportedBy());
             ((EditText)view.findViewById(R.id.edit_receivedby__report)).setText(getItem(i).getReceivedBy());
 
+            return view;
+        }
+    }
+
+    private class EquipmentDetailAdapter extends BaseAdapter{
+
+        @Override
+        public int getCount() {
+            return getStockManager().getStocks("newStocks").getStocks().get("commissioned").size();
+        }
+
+        @Override
+        public Stock getItem(int i) {
+            return getStockManager().getStocks("newStocks").getStocks().get("commissioned").get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            if (view == null){
+                view = getLayoutInflater().inflate(R.layout.detail_view, null);
+            }
+            ((TextView)view.findViewById(R.id.txt_part_number)).setText(getItem(i).getPartNumber());
+            ((TextView)view.findViewById(R.id.txt_description)).setText(getItem(i).getDescription());
+            ((TextView)view.findViewById(R.id.txt_quantity)).setText(String.valueOf(getItem(i).getQuantity()));
+            ((TextView)view.findViewById(R.id.txt_amount)).setText(getItem(i).getAmount());
+            return view;
+        }
+    }
+    private class JobCardAdapter extends BaseAdapter{
+        @Override
+        public int getCount() {
+            return getStockManager().getStocks("newJobs").getStocks()!=null&&getStockManager().getStocks("newJobs").getStocks().get("commissioned")!=null?getStockManager().getStocks("newJobs").getStocks().get("commissioned").size():0;
+        }
+
+        @Override
+        public Stock getItem(int i) {
+            return getStockManager().getStocks("newJobs").getStocks().get("commissioned").get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            if (view == null){
+                view = getLayoutInflater().inflate(R.layout.detail_view, null);
+            }
+            ((TextView)view.findViewById(R.id.txt_part_number)).setText(getItem(i).getPartNumber());
+            ((TextView)view.findViewById(R.id.txt_description)).setText(getItem(i).getDescription());
+            ((TextView)view.findViewById(R.id.txt_quantity)).setText(String.valueOf(getItem(i).getQuantity()));
+            ((TextView)view.findViewById(R.id.txt_amount)).setText(getItem(i).getAmount());
             return view;
         }
     }

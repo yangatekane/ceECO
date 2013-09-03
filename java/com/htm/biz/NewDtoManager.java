@@ -51,13 +51,13 @@ public class NewDtoManager extends Manager{
         return newDtos;
     }
     public void saveNewEquipment( String stockCategory,String repairType, String hospital,String location,String tradeworld,
-                                  String Rdate, String Idate, String Cdate, String Wdate, String QAdate, String Sdate,String serial_number, String device, String make, String model,String supplier) throws IOException {
+                                  String Rdate, String Idate, String Cdate, String Wdate, String QAdate, String Sdate,String serial_number, String device, String make, String model) throws IOException {
         NewDtos s = getNewEquipments(stockCategory);
         if (!s.getNewEquiments().containsKey(repairType)){
             s.getNewEquiments().put(repairType, new ArrayList<NewDto>());
         }
         s.getNewEquiments().get(repairType).add(new NewDto(hospital,location,tradeworld,
-                Rdate, Idate, Cdate, Wdate, QAdate, Sdate,serial_number,device,make,model,supplier));
+                Rdate, Idate, Cdate, Wdate, QAdate, Sdate,serial_number,device,make,model));
         File newEquipmentsFile = getFile(stockCategory, "newEquipment");
         if (!newEquipmentsFile.exists()){
             newEquipmentsFile.createNewFile();

@@ -28,12 +28,20 @@ public class NewDto implements Serializable {
 
     public NewDto(String hospital,String location,String tradeworld,
                   String Rdate, String Idate, String Cdate, String Wdate, String QAdate, String Sdate,
-                  String serialNo, String device, String make, String model, String supplier){
+                  String serialNo, String device, String make, String model){
         this.serialNo = serialNo;
         this.device = device;
         this.make = make;
         this.model = model;
-        this.supplier = supplier;
+        this.hospital = hospital;
+        this.location = location;
+        this.tradeworld = tradeworld;
+        this.Rdate = Rdate;
+        this.Idate = Idate;
+        this.Cdate = Cdate;
+        this.Wdate = Wdate;
+        this.QAdate = QAdate;
+        this.Sdate = Sdate;
     }
     public String getSerialNumber(){
         return serialNo;

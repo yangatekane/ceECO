@@ -42,14 +42,15 @@ public class NewEquipmentActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_equipment);
         setup();
-        newSaved = new AlertDialog.Builder(this)
+        newSaved =  new AlertDialog.Builder(this)
                 .setMessage("New Equipment information saved....")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         destruct();
                     }
-              }).create();
+                }).create();
+
             ((Button)findViewById(R.id.btn_save_new_equipment)).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -57,8 +58,7 @@ public class NewEquipmentActivity extends BaseActivity {
                         if (serialNumber.getText().toString().equalsIgnoreCase("")||
                                 device.getText().toString().equalsIgnoreCase("")||
                                 make.getText().toString().equalsIgnoreCase("")||
-                                model.getText().toString().equalsIgnoreCase("")||
-                                supplier.getText().toString().equalsIgnoreCase("")){
+                                model.getText().toString().equalsIgnoreCase("")){
                             newSaved.setMessage("Please fill in all fields");
                             newSaved.show();
                         }else {
@@ -81,8 +81,7 @@ public class NewEquipmentActivity extends BaseActivity {
                                     serialNumber.getText().toString(),
                                     device.getText().toString(),
                                     make.getText().toString(),
-                                    model.getText().toString(),
-                                    supplier.getText().toString());
+                                    model.getText().toString());
                                     newSaved.setMessage("New Equipment information saved....");
                                     newSaved.show();
                         }
@@ -105,7 +104,7 @@ public class NewEquipmentActivity extends BaseActivity {
         device.setText("");
         make.setText("");
         model.setText("");
-        supplier.setText("");
+        //supplier.setText("");
         newSaved.dismiss();
     }
 
@@ -118,7 +117,7 @@ public class NewEquipmentActivity extends BaseActivity {
         cost = (EditText) findViewById(R.id.edit_cost);
 
         Rday = (Spinner) findViewById(R.id.spin_received_day);
-        Rmonth = (Spinner) findViewById(R.id.spin_repair_month);
+        Rmonth = (Spinner) findViewById(R.id.spin_received_month);
         Ryear = (Spinner) findViewById(R.id.spin_received_year);
 
         Iday = (Spinner) findViewById(R.id.spin_invoice_day);
@@ -145,7 +144,7 @@ public class NewEquipmentActivity extends BaseActivity {
         device = (EditText)findViewById(R.id.edit_device);
         make = (EditText)findViewById(R.id.edit_make);
         model = (EditText)findViewById(R.id.edit_model);
-        supplier = (EditText)findViewById(R.id.edit_supplier);
+        //supplier = (EditText)findViewById(R.id.edit_supplier);
     }
 
     @Override

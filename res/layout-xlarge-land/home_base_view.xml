@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:textColor="@color/profile_text_color"
-                    android:text="@string/profile_categories"/>
+                    android:text="Eco-HTM"/>
 
             <LinearLayout
                     android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:textColor="@color/profile_text_color_light"
-                        android:text="@string/profile_categories_description"/>
+                        android:text="Green Clinical Engineering Software"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:textColor="@color/profile_text_color_light"
-                        android:text="@string/profile_categories_description"/>
+                        android:text="Create new equipment database"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:textColor="@color/profile_text_color_light"
-                        android:text="@string/notification_label_description"/>
+                        android:text="Scan to search or add existing equipment"/>
             </LinearLayout>
         </LinearLayout>
 
