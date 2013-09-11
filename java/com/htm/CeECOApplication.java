@@ -1,6 +1,13 @@
 package com.htm;
 
 import android.app.Application;
+import android.content.Context;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.htm.biz.LogonManager;
 import com.htm.biz.NewDtoManager;
@@ -36,4 +43,5 @@ public class CeECOApplication extends Application {
     public RepairsRequisitionManager getRepairsRequisitionManager(){
         return repairsRequisitionManager;
     }
+
 }

@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.htm.dto.Repair;
+import com.htm.dto.Repairs.Repair;
 
 import java.util.LinkedList;
 import java.util.List;

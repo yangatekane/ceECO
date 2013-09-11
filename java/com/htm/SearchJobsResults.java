@@ -19,8 +19,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-import com.htm.dto.Repair;
-import com.htm.dto.Stock;
+import com.htm.dto.Repairs.Repair;
+import com.htm.dto.Stocks.Stock;
 
 import java.io.IOException;
 import java.util.LinkedList;

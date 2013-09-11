@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.htm.BaseActivity;
 import com.htm.R;
-import com.htm.dto.Stock;
+import com.htm.dto.Stocks.Stock;
 
 
 /**

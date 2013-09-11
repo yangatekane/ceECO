@@ -99,22 +99,59 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Sear" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36423168-e515-4cdd-86f2-a0c843dc2cfc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ic_launcher-web.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_launcher.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ic_launcher-web.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/ic_launcher.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/NewDto.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/NewDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/toast.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/custom_toast.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/drawer_list_item_group.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/NewDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/Repair.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/Stock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/BaseActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/CeECOApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/ExistingEquipment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/GraphsActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/HomeActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/JobCardsActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/NewEquipmentActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/NewEquipmentReportActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RegistrationActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RepairsRequisitionActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RepairsRequisitionReportActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/SearchJobsResults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/SearchRepairsResults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/LogonManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/Manager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/NewDtoManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/RepairsRequisitionManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/StockManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/NewDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/NewDtos.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Repair.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Repairs.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Stock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Stocks.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/fragments/ExportFragment.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/drawer_list_item.xml" afterPath="$PROJECT_DIR$/res/layout/drawer_list_item_child.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/BaseActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" afterPath="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" afterPath="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/NewDtos.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/NewDtos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RegistrationActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RegistrationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" afterPath="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" afterPath="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/Stocks.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/Stocks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays.xml" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/search_list_job_detail.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/search_list_job_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ceECO.iws" />
@@ -204,42 +241,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home_activity.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/home_activity.xml">
+      <file leaf-file-name="RepairsRequisitionActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="249" column="76" selection-start="10490" selection-end="10490" vertical-scroll-proportion="1.6428572" vertical-offset="3464" max-vertical-offset="4266">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CeECOApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/CeECOApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/BaseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="5" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepairsRequisitionReportActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1188">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="16" selection-start="227" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repairs_requisition.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="236" column="42" selection-start="11589" selection-end="11589" vertical-scroll-proportion="0.0" vertical-offset="3878" max-vertical-offset="4446">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_base_view.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="56" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6990991" vertical-offset="458" max-vertical-offset="4536">
-              <folding>
-                <element signature="e#1685#1694#0" expanded="true" />
-                <element signature="e#4021#4049#0" expanded="true" />
-                <element signature="e#4372#4403#0" expanded="true" />
-                <element signature="e#6416#6455#0" expanded="true" />
-                <element signature="e#8595#8637#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="40" selection-start="2422" selection-end="2422" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="4104">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -261,22 +316,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/java/com/htm/dto/NewDtos.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/CaptureActivity.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/ExistingEquipment.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/dto/Stock.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/dto/Repair.java" />
-        <option value="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" />
-        <option value="$PROJECT_DIR$/java/com/htm/dto/NewDto.java" />
+        <option value="$PROJECT_DIR$/res/layout/drawer_list_item_child.xml" />
+        <option value="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" />
         <option value="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" />
-        <option value="$PROJECT_DIR$/res/layout-xlarge-land/search_list_job_detail.xml" />
-        <option value="$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml" />
+        <option value="$PROJECT_DIR$/res/layout-large-land/repairs_requisition.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" />
+        <option value="$PROJECT_DIR$/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" />
       </list>
     </option>
   </component>
@@ -363,7 +418,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout-xlarge-land" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,7 +436,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,6 +451,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,20 +505,20 @@
       <recent name="com.ceeco.fragments" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/layout" />
       <recent name="$PROJECT_DIR$/res/drawable" />
+      <recent name="$PROJECT_DIR$/res/layout/java" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
-      <recent name="$PROJECT_DIR$/res/menu" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.htm.barcode" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/layout-xlarge-land" />
       <recent name="$PROJECT_DIR$/res/layout-xlarge" />
       <recent name="$PROJECT_DIR$/res/layout" />
       <recent name="$PROJECT_DIR$/res" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.htm.barcode" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.ceECO">
@@ -620,10 +679,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="513" y="71" width="412" height="623" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36378205" sideWeight="0.5152" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -634,13 +692,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.0" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35496795" sideWeight="0.5152" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22115384" sideWeight="0.5152" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36298078" sideWeight="0.4608" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -684,16 +743,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/java/com/htm/fragments/ExportFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/layout-large/repairs_requisition.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="4" selection-start="2724" selection-end="3899" vertical-scroll-proportion="0.0" vertical-offset="803" max-vertical-offset="1386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/detail_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="774">
+        <state line="196" column="24" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.53693694" vertical-offset="3230" max-vertical-offset="3798">
           <folding />
         </state>
       </provider>
@@ -701,30 +753,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stock.java">
+    <entry file="file://$PROJECT_DIR$/res/layout-large-land/repairs_requisition.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="812" selection-end="812" vertical-scroll-proportion="0.45637584" vertical-offset="250" max-vertical-offset="846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="89" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1188">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/biz/StockManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="53" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/registration_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="52" selection-start="1795" selection-end="1795" vertical-scroll-proportion="-3.392857" vertical-offset="445" max-vertical-offset="1836">
+        <state line="195" column="13" selection-start="9614" selection-end="9614" vertical-scroll-proportion="0.5045045" vertical-offset="3230" max-vertical-offset="3798">
           <folding />
         </state>
       </provider>
@@ -732,16 +763,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.AndroidStudioPreview/system/compiler/ceeco.4ae2151d/.generated/aapt/ceECO.1d8fe6b7/production/com/htm/R.java">
+    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="32" selection-start="14300" selection-end="14300" vertical-scroll-proportion="0.33163264" vertical-offset="4280" max-vertical-offset="10170">
+        <state line="404" column="13" selection-start="22616" selection-end="22616" vertical-scroll-proportion="0.5045045" vertical-offset="6992" max-vertical-offset="7560">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-xlarge/repairs_requisition.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="24" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.53693694" vertical-offset="3230" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/ExpandableListView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="2106" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AbsListView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="0" selection-start="12729" selection-end="12729" vertical-scroll-proportion="0.5609756" vertical-offset="5262" max-vertical-offset="5508" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="0" selection-start="8219" selection-end="9275" vertical-scroll-proportion="0.04049296" vertical-offset="3001" max-vertical-offset="4464">
+        <state line="236" column="42" selection-start="11589" selection-end="11589" vertical-scroll-proportion="0.0" vertical-offset="3878" max-vertical-offset="4446">
           <folding />
         </state>
       </provider>
@@ -749,9 +803,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/search_list_job_detail.xml">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Instrumentation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="41" selection-start="8870" selection-end="8870" vertical-scroll-proportion="0.44190142" vertical-offset="3043" max-vertical-offset="4878">
+        <state line="112" column="16" selection-start="5963" selection-end="5963" vertical-scroll-proportion="0.0" vertical-offset="1937" max-vertical-offset="2844" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="19" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.32972974" vertical-offset="875" max-vertical-offset="7866" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/custom_toast.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -759,60 +830,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Stocks.java">
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="370" selection-end="370" vertical-scroll-proportion="0.36241612" vertical-offset="0" max-vertical-offset="596">
+        <state line="14" column="58" selection-start="0" selection-end="688" vertical-scroll-proportion="0.42281878" vertical-offset="0" max-vertical-offset="596">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repair.java">
+    <entry file="file://$PROJECT_DIR$/java/com/htm/CeECOApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="15" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.17114094" vertical-offset="834" max-vertical-offset="1692">
+        <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="738">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/SearchJobsResults.java">
+    <entry file="file://$PROJECT_DIR$/java/com/htm/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="56" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.2161235" vertical-offset="576" max-vertical-offset="2718">
-          <folding>
-            <element signature="class#RepairRequisitionDetailAdapter#0;class#SearchJobsResults#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/home_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="40" selection-start="2422" selection-end="2422" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="4104">
+        <state line="51" column="5" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/home_base_view.xml">
+    <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="56" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6990991" vertical-offset="458" max-vertical-offset="4536">
-          <folding>
-            <element signature="e#1685#1694#0" expanded="true" />
-            <element signature="e#4021#4049#0" expanded="true" />
-            <element signature="e#4372#4403#0" expanded="true" />
-            <element signature="e#6416#6455#0" expanded="true" />
-            <element signature="e#8595#8637#0" expanded="true" />
-          </folding>
+        <state line="7" column="16" selection-start="227" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3348">
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="76" selection-start="10490" selection-end="10490" vertical-scroll-proportion="1.6428572" vertical-offset="3464" max-vertical-offset="4266">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

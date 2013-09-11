@@ -3,7 +3,7 @@ package com.htm.biz;
 import android.util.Log;
 
 import com.htm.CeECOApplication;
-import com.htm.dto.Repair;
+import com.htm.dto.Repairs.Repair;
 import com.htm.dto.Repairs;
 
 import java.io.File;

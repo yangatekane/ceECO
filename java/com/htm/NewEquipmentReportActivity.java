@@ -7,7 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.htm.dto.NewDto;
+import com.htm.dto.NewDtos.NewDto;
 
 /**
  * Created by yanga on 2013/08/16.

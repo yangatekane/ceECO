@@ -3,7 +3,7 @@ package com.htm.biz;
 import android.util.Log;
 
 import com.htm.CeECOApplication;
-import com.htm.dto.NewDto;
+import com.htm.dto.NewDtos.NewDto;
 import com.htm.dto.NewDtos;
 
 import java.io.File;

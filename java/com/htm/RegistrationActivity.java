@@ -43,7 +43,7 @@ public class RegistrationActivity extends BaseActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerList = (ListView) findViewById(R.id.left_drawer);
         drawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        drawerList.setAdapter(new ArrayAdapter<String>(this,R.layout.drawer_list_item, getResources().getStringArray(R.array.drawer_list)));
+        drawerList.setAdapter(new ArrayAdapter<String>(this,R.layout.drawer_list_item_child, getResources().getStringArray(R.array.drawer_list)));
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
