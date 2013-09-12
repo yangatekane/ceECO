@@ -13,25 +13,21 @@
                 android:id="@+id/txt_part_number"
                 android:layout_height="wrap_content"
                 android:layout_width="140dp"
-                style="@style/HeadingText"
                 android:padding="8dp"/>
         <TextView
                 android:id="@+id/txt_description"
                 android:layout_height="wrap_content"
                 android:layout_width="240dp"
-                style="@style/HeadingText"
                 android:padding="8dp"/>
         <TextView
                 android:id="@+id/txt_quantity"
                 android:layout_height="wrap_content"
                 android:layout_width="40dp"
-                style="@style/HeadingText"
                 android:padding="8dp"/>
         <TextView
                 android:id="@+id/txt_amount"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                style="@style/HeadingText"
                 android:padding="8dp"/>
     </TableRow>
 

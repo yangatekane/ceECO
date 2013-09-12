@@ -6,5 +6,6 @@
           android:gravity="center_vertical"
           android:paddingLeft="16dp"
           android:paddingRight="16dp"
+          style="@style/HeadingText"
           android:textColor="@color/black"
           android:minHeight="?android:attr/listPreferredItemHeightSmall"/>

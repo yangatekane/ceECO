@@ -103,55 +103,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36423168-e515-4cdd-86f2-a0c843dc2cfc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/toast.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/custom_toast.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/drawer_list_item_group.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/NewDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/Repair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/java/com/htm/dto/Stock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/BaseActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/CeECOApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/ExistingEquipment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/GraphsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/HomeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/JobCardsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/NewEquipmentActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/NewEquipmentReportActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RegistrationActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RepairsRequisitionActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/RepairsRequisitionReportActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/SearchJobsResults.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/SearchRepairsResults.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/LogonManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/Manager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/NewDtoManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/RepairsRequisitionManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/biz/StockManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/NewDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/NewDtos.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Repair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Repairs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Stock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/dto/Stocks.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/java/com/htm/fragments/ExportFragment.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/drawer_list_item.xml" afterPath="$PROJECT_DIR$/res/layout/drawer_list_item_child.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/BaseActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" afterPath="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" afterPath="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/NewDtos.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/NewDtos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RegistrationActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RegistrationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/Repairs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" afterPath="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" afterPath="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" afterPath="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" afterPath="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/com/htm/dto/Stocks.java" afterPath="$PROJECT_DIR$/java/com/htm/dto/Stocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays.xml" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/detail_view.xml" afterPath="$PROJECT_DIR$/res/layout/detail_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/drawer_list_item_group.xml" afterPath="$PROJECT_DIR$/res/layout/drawer_list_item_group.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_list_report_detail.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge-land/repairs_list_report_detail.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ceECO.iws" />
@@ -215,23 +171,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java" line="64" class="com.htm.NewEquipmentActivity$2" package="com.htm">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -241,19 +181,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RepairsRequisitionActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RepairsRequisitionActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="76" selection-start="10490" selection-end="10490" vertical-scroll-proportion="1.6428572" vertical-offset="3464" max-vertical-offset="4266">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CeECOApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/com/htm/CeECOApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="738">
+            <state line="218" column="75" selection-start="8515" selection-end="8515" vertical-scroll-proportion="0.0" vertical-offset="3142" max-vertical-offset="4266">
               <folding />
             </state>
           </provider>
@@ -262,7 +193,7 @@
       <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="5" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="810">
+            <state line="51" column="5" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1044">
               <folding />
             </state>
           </provider>
@@ -271,30 +202,30 @@
       <file leaf-file-name="RepairsRequisitionReportActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1188">
+            <state line="46" column="82" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/arrays.xml">
+      <file leaf-file-name="repairs_list_report_detail.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_list_report_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="227" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3348">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="repairs_requisition.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="42" selection-start="11589" selection-end="11589" vertical-scroll-proportion="0.0" vertical-offset="3878" max-vertical-offset="4446">
+            <state line="97" column="24" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.52191234" vertical-offset="1615" max-vertical-offset="4266">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewEquipmentActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="43" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="2754">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -316,22 +247,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/drawer_list_item_child.xml" />
-        <option value="$PROJECT_DIR$/java/com/htm/NewEquipmentReportActivity.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/SearchRepairsResults.java" />
-        <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/NewDtoManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/RepairsRequisitionManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/biz/StockManager.java" />
         <option value="$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java" />
         <option value="$PROJECT_DIR$/java/com/htm/SearchJobsResults.java" />
         <option value="$PROJECT_DIR$/res/layout-large-land/repairs_requisition.xml" />
-        <option value="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" />
         <option value="$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/java/com/htm/CeECOApplication.java" />
         <option value="$PROJECT_DIR$/java/com/htm/BaseActivity.java" />
         <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java" />
+        <option value="$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml" />
+        <option value="$PROJECT_DIR$/res/layout/detail_view.xml" />
+        <option value="$PROJECT_DIR$/res/layout/drawer_list_item_group.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xlarge-land/repairs_list_report_detail.xml" />
       </list>
     </option>
   </component>
@@ -339,10 +270,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="-4" />
-    <option name="width" value="1296" />
-    <option name="height" value="773" />
+    <option name="x" value="72" />
+    <option name="y" value="24" />
+    <option name="width" value="1294" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -370,7 +301,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -458,22 +388,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceECO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceECO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="231" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zxing-2.2/android" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zxing-2.2/android" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="231" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ceeco" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -488,12 +441,12 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="359" />
     <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.STATE" value="ToolWindow" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="C8F13EC168EC56E" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.STATE" value="ToolWindow" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.STATE" value="ToolWindow" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -673,33 +626,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="-4" width="1296" height="773" extended-state="6" />
+    <frame x="72" y="24" width="1294" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="513" y="71" width="412" height="623" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36276084" sideWeight="0.5167785" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32550335" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.0" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22115384" sideWeight="0.5152" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.288122" sideWeight="0.5167785" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48322147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36298078" sideWeight="0.4608" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -708,13 +661,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45264846" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3125" sideWeight="0.4317817" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45264846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="513" y="71" width="412" height="623" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -743,81 +696,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout-large/repairs_requisition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="24" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.53693694" vertical-offset="3230" max-vertical-offset="3798">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-large-land/repairs_requisition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="13" selection-start="9614" selection-end="9614" vertical-scroll-proportion="0.5045045" vertical-offset="3230" max-vertical-offset="3798">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="404" column="13" selection-start="22616" selection-end="22616" vertical-scroll-proportion="0.5045045" vertical-offset="6992" max-vertical-offset="7560">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge/repairs_requisition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="24" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.53693694" vertical-offset="3230" max-vertical-offset="3798">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/ExpandableListView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="2106" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AbsListView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="0" selection-start="12729" selection-end="12729" vertical-scroll-proportion="0.5609756" vertical-offset="5262" max-vertical-offset="5508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="42" selection-start="11589" selection-end="11589" vertical-scroll-proportion="0.0" vertical-offset="3878" max-vertical-offset="4446">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Instrumentation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="16" selection-start="5963" selection-end="5963" vertical-scroll-proportion="0.0" vertical-offset="1937" max-vertical-offset="2844" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="19" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.32972974" vertical-offset="875" max-vertical-offset="7866" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1188">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/custom_toast.xml">
@@ -858,11 +739,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_requisition.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="76" selection-start="10490" selection-end="10490" vertical-scroll-proportion="1.6428572" vertical-offset="3464" max-vertical-offset="4266">
+        <state line="116" column="0" selection-start="5554" selection-end="6128" vertical-scroll-proportion="-9.214286" vertical-offset="1830" max-vertical-offset="4446">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/dto/Repairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="22" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.3321617" vertical-offset="729" max-vertical-offset="1926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/detail_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.83116883" vertical-offset="74" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/fragments/ExportFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="80" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.5343915" vertical-offset="1299" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/new_equipment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="56" selection-start="6122" selection-end="6122" vertical-scroll-proportion="0.19851577" vertical-offset="1909" max-vertical-offset="7542">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/NewEquipmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="43" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="2754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/drawer_list_item_group.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="397" selection-end="397" vertical-scroll-proportion="0.5737052" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="218" column="75" selection-start="8515" selection-end="8515" vertical-scroll-proportion="0.0" vertical-offset="3142" max-vertical-offset="4266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/htm/RepairsRequisitionReportActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="82" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-xlarge-land/repairs_list_report_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="24" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.52191234" vertical-offset="1615" max-vertical-offset="4266">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

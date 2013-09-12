@@ -147,6 +147,9 @@ public class SearchJobsResults extends BaseActivity {
             ((EditText)view.findViewById(R.id.edit_description_report)).setText(getItem(i).getDescription());
             ((EditText)view.findViewById(R.id.edit_reportedBy_report)).setText(getItem(i).getReportedBy());
             ((EditText)view.findViewById(R.id.edit_receivedby__report)).setText(getItem(i).getReceivedBy());
+            ((EditText)view.findViewById(R.id.edit_model_report)).setText(getItem(i).getModel());
+            ((EditText)view.findViewById(R.id.edit_make_report)).setText(getItem(i).getMake());
+            ((EditText)view.findViewById(R.id.edit_serial_number_report)).setText(getItem(i).getSerialNo());
 
             return view;
         }
