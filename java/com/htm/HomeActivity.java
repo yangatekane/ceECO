@@ -4,14 +4,11 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-
-import java.io.IOException;
 
 public class HomeActivity extends BaseActivity {
     private static final String TAG = HomeActivity.class.getName();
@@ -70,7 +67,7 @@ public class HomeActivity extends BaseActivity {
             case R.id.action_settings:
                 break;
             case R.id.home_action_login_logout:
-                startActivity(new Intent(HomeActivity.this,RegistrationActivity.class));
+                startActivity(new Intent(HomeActivity.this,StocksActivity.class));
                 break;
             case R.id.home_action_graphs:
                 startActivity(new Intent(HomeActivity.this,GraphsActivity.class));

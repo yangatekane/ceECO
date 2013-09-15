@@ -7,6 +7,20 @@
         <item>Analysis</item>
         <item>BI</item>
     </string-array>
+    <string-array name="drawer_list_requisitions">
+        <item>Audit Trail</item>
+        <item>Reports</item>
+        <item>By Make</item>
+        <item>By Model</item>
+        <item>By Serial</item>
+        <item>Statistics</item>
+    </string-array>
+    <string-array name="drawer_list_stocks">
+        <item>Audit Trail</item>
+        <item>By Supplier</item>
+        <item>By Part Number</item>
+        <item>By Description</item>
+    </string-array>
     <string-array name="export">
         <item>Print</item>
         <item>Email</item>

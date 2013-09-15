@@ -1,6 +1,9 @@
 package com.htm;
 
 import android.app.AlertDialog;
+import android.app.DialogFragment;
+import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,9 +24,13 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.htm.dto.Repairs;
+import com.htm.fragments.TotalsFragment;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 
 /**
  * Created by yanga on 2013/08/15.
@@ -36,6 +43,7 @@ public class RepairsRequisitionActivity extends BaseActivity {
     private ActionBarDrawerToggle drawerToggle;
     private HashMap<String, ArrayList<String>> drawer = new HashMap<String, ArrayList<String>>();
     private DrawerAdapter drawerExpandableListAdapter = new DrawerAdapter();
+
     private EditText serialNum;
     private EditText make;
     private EditText model;
@@ -50,6 +58,13 @@ public class RepairsRequisitionActivity extends BaseActivity {
     private EditText description;
     private EditText reportedBy;
     private EditText receivedBy;
+
+    ArrayList<String> auditsChildList = new ArrayList<String>();
+    ArrayList<String> reportsChildList = new ArrayList<String>();
+    ArrayList<String> makeChildList = new ArrayList<String>();
+    ArrayList<String> modelChildList = new ArrayList<String>();
+    ArrayList<String> serialChildList = new ArrayList<String>();
+    ArrayList<String> statsChildList = new ArrayList<String>();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.repairs_requisition);
@@ -77,6 +92,7 @@ public class RepairsRequisitionActivity extends BaseActivity {
                             tel.getText().toString(), date, section.getText().toString(), department.getText().toString(), floor.getText().toString(),
                             description.getText().toString(), reportedBy.getText().toString(), receivedBy.getText().toString());
                     repairSaved.show();
+                    drawerExpandableListAdapter.notifyDataSetChanged();
                 } catch (IOException e) {
                     Log.e(TAG, e.getMessage(), e);
                     repairSaved.dismiss();
@@ -92,12 +108,48 @@ public class RepairsRequisitionActivity extends BaseActivity {
     }
 
     private void setupDrawer() {
-        for(String group:getResources().getStringArray(R.array.drawer_list)){
-            ArrayList<String> childList = new ArrayList<String>();
-            for (String child:getResources().getStringArray(R.array.drawer_months)){
-                childList.add(child);
+        for(String group:getResources().getStringArray(R.array.drawer_list_requisitions)){
+
+            if (group.equalsIgnoreCase("Audit Trail")){
+                auditsChildList.add("Audits");
+                drawer.put(group,auditsChildList);
+            }else if (group.equalsIgnoreCase("Reports")){
+                for (String child:getResources().getStringArray(R.array.drawer_months)){
+                    reportsChildList.add(child);
+                }
+                drawer.put(group,reportsChildList);
+            }else if (group.equalsIgnoreCase("By Make")){
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                while (iterator.hasNext()){
+                    Repairs.Repair repair = (Repairs.Repair)iterator.next();
+                    if (!makeChildList.contains(repair.getMake()))
+                        makeChildList.add(repair.getMake());
+                }
+                drawer.put(group,makeChildList);
+            }else if (group.equalsIgnoreCase("By Model")){
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                while (iterator.hasNext()){
+                    Repairs.Repair repair = (Repairs.Repair)iterator.next();
+                    if (!modelChildList.contains(repair.getModel()))
+                        modelChildList.add(repair.getModel());
+                }
+                drawer.put(group,modelChildList);
+            }else if (group.equalsIgnoreCase("By Serial")){
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                while (iterator.hasNext()){
+                    Repairs.Repair repair = (Repairs.Repair)iterator.next();
+                    if (!serialChildList.contains(repair.getSerialNo()))
+                        serialChildList.add(repair.getSerialNo());
+                }
+                drawer.put(group,serialChildList);
+            }else {
+                for (String child:getResources().getStringArray(R.array.drawer_months)){
+                    statsChildList.add(child);
+                }
+                drawer.put(group,statsChildList);
             }
-            drawer.put(group,childList);
+
+
         }
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerList = (ExpandableListView) findViewById(R.id.left_drawer_requisitions);
@@ -155,7 +207,19 @@ public class RepairsRequisitionActivity extends BaseActivity {
         reportedBy = (EditText)findViewById(R.id.edit_reportedBy);
         receivedBy = (EditText)findViewById(R.id.edit_receivedby);
     }
-
+    private void showTotalsDialog(String month){
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        android.app.Fragment fragment = getFragmentManager().findFragmentByTag("dialog");
+        if (fragment != null){
+            ft.remove(fragment);
+        }
+        ft.addToBackStack(null);
+        DialogFragment contentFragment = new TotalsFragment(RepairsRequisitionActivity.this);
+        Bundle bundle = new Bundle();
+        bundle.putString("month",month);
+        contentFragment.setArguments(bundle);
+        contentFragment.show(ft,"dialog");
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
@@ -185,7 +249,13 @@ public class RepairsRequisitionActivity extends BaseActivity {
 
         @Override
         public int getChildrenCount(int childPosition) {
-            return getResources().getStringArray(R.array.drawer_months).length;
+            int monthsSize = getResources().getStringArray(R.array.drawer_months).length;
+            boolean hasAudits = (getGroup(childPosition).equalsIgnoreCase("Audit Trail"));
+            boolean hasMakes = (getGroup(childPosition).equalsIgnoreCase("By Make"));
+            boolean hasModels = (getGroup(childPosition).equalsIgnoreCase("By Model"));
+            boolean hasSerials = (getGroup(childPosition).equalsIgnoreCase("By Serial"));
+            boolean hasReports = (getGroup(childPosition).equalsIgnoreCase("Reports"));
+            return hasAudits?auditsChildList.size():hasMakes?makeChildList.size():hasModels?modelChildList.size():hasSerials?serialChildList.size():hasReports?monthsSize:statsChildList.size();
         }
 
         @Override
@@ -215,6 +285,7 @@ public class RepairsRequisitionActivity extends BaseActivity {
 
         @Override
         public View getGroupView(int groupPosition, boolean b, View view, ViewGroup viewGroup) {
+            final int group = groupPosition;
             if (view == null){
                 view = getLayoutInflater().inflate(R.layout.drawer_list_item_group,null);
             }
@@ -235,18 +306,38 @@ public class RepairsRequisitionActivity extends BaseActivity {
             childLabel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (getGroup(group).equalsIgnoreCase("Reports") && getChild(group,child).equalsIgnoreCase("January")){
-                        startActivity(new Intent(RepairsRequisitionActivity.this,RepairsRequisitionReportActivity.class));
+                    if (getGroup(group).equalsIgnoreCase("Reports")){
+                        for (Repairs.Repair repair:getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")){
+                            if(repair.getDate().split(" ")[1].equalsIgnoreCase(getChild(group,child))){
+                                startActivity(new Intent(RepairsRequisitionActivity.this,RepairsRequisitionReportActivity.class).putExtra("month",getChild(group,child)));
+                                showToast(RepairsRequisitionActivity.this,"Report found");
+                                break;
+                            }else{
+                                showToast(RepairsRequisitionActivity.this,"No report found");
+                                continue;
+                            }
+                        }
+
+                    }else if(getGroup(group).equalsIgnoreCase("Audit Trail")){
+                        startActivity(new Intent(RepairsRequisitionActivity.this,AuditTrailsActivity.class));
+                    }else if (getGroup(group).equalsIgnoreCase("By Make")){
+                        startActivity(new Intent(RepairsRequisitionActivity.this,MakeActivity.class).putExtra("make",getChild(group,child)));
+                    }else if (getGroup(group).equalsIgnoreCase("By Model")){
+                        startActivity(new Intent(RepairsRequisitionActivity.this,ModelActivity.class).putExtra("model",getChild(group,child)));
+                    }else if (getGroup(group).equalsIgnoreCase("By Serial")){
+                        startActivity(new Intent(RepairsRequisitionActivity.this,SerialActivity.class).putExtra("serial",getChild(group,child)));
+                    }else  if(getGroup(group).equalsIgnoreCase("Statistics")){
+                        showTotalsDialog(getChild(group,child));
                     }else {
                         if (getGroup(group).equalsIgnoreCase("Reports")){
                             showToast(RepairsRequisitionActivity.this,"No report found");
                         }else if (getGroup(group).equalsIgnoreCase("Audit Trail")){
                             showToast(RepairsRequisitionActivity.this,"No audits found");
-                        }else if (getGroup(group).equalsIgnoreCase("Statistics")){
-                            showToast(RepairsRequisitionActivity.this,"No statistics found");
+                        }else if (getGroup(group).equalsIgnoreCase("By Make")){
+                            showToast(RepairsRequisitionActivity.this,"By Model");
                         }else if (getGroup(group).equalsIgnoreCase("Analysis")){
                             showToast(RepairsRequisitionActivity.this,"No analysis found");
-                        }else if (getGroup(group).equalsIgnoreCase("BI")){
+                        }else if (getGroup(group).equalsIgnoreCase("By Serial")){
                             showToast(RepairsRequisitionActivity.this,"No BI found");
                         }
                     }

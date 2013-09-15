@@ -1,6 +1,5 @@
 package com.htm;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,40 +7,40 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.htm.dto.Repairs.Repair;
+import com.htm.dto.Repairs;
 
 import java.util.ArrayList;
 
 /**
- * Created by yanga on 2013/08/18.
+ * Created by yanga on 2013/09/14.
  */
-public class RepairsRequisitionReportActivity extends BaseActivity {
-    private static final String TAG = RepairsRequisitionReportActivity.class.getName();
+public class MakeActivity extends BaseActivity {
+    private static final String TAG = MakeActivity.class.getName();
     private ListView listView;
     private RepairRequisitionDetailAdapter repairRequisitionDetailAdapter;
-    private ArrayList<Repair> repairsByMonth = new ArrayList<Repair>();
+    private ArrayList<Repairs.Repair> repairsBymake = new ArrayList<Repairs.Repair>();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.repairs_requisition_report);
-        for (Repair repair:getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")){
-            if (repair.getDate().split(" ")[1].equalsIgnoreCase(getIntent().getStringExtra("month"))){
-                repairsByMonth.add(repair);
+        for (Repairs.Repair repair:getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")){
+            if (repair.getMake().equalsIgnoreCase(getIntent().getStringExtra("make"))){
+                repairsBymake.add(repair);
             }
         }
         listView = (ListView) findViewById(R.id.repair_requisition_list);
         repairRequisitionDetailAdapter = new RepairRequisitionDetailAdapter();
         listView.setAdapter(repairRequisitionDetailAdapter);
     }
-    private class RepairRequisitionDetailAdapter extends BaseAdapter{
+    private class RepairRequisitionDetailAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return repairsByMonth.size();
+            return repairsBymake.size();
         }
 
         @Override
-        public Repair getItem(int i) {
-            return repairsByMonth.get(i);
+        public Repairs.Repair getItem(int i) {
+            return repairsBymake.get(i);
         }
 
         @Override

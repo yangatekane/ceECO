@@ -8,40 +8,32 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.htm.dto.Repairs.Repair;
-
-import java.util.ArrayList;
+import com.htm.dto.Repairs;
 
 /**
- * Created by yanga on 2013/08/18.
+ * Created by yanga on 2013/09/13.
  */
-public class RepairsRequisitionReportActivity extends BaseActivity {
-    private static final String TAG = RepairsRequisitionReportActivity.class.getName();
+public class AuditTrailsActivity extends BaseActivity {
+    private static final String TAG = AuditTrailsActivity.class.getName();
     private ListView listView;
     private RepairRequisitionDetailAdapter repairRequisitionDetailAdapter;
-    private ArrayList<Repair> repairsByMonth = new ArrayList<Repair>();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.repairs_requisition_report);
-        for (Repair repair:getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")){
-            if (repair.getDate().split(" ")[1].equalsIgnoreCase(getIntent().getStringExtra("month"))){
-                repairsByMonth.add(repair);
-            }
-        }
         listView = (ListView) findViewById(R.id.repair_requisition_list);
         repairRequisitionDetailAdapter = new RepairRequisitionDetailAdapter();
         listView.setAdapter(repairRequisitionDetailAdapter);
     }
-    private class RepairRequisitionDetailAdapter extends BaseAdapter{
+    private class RepairRequisitionDetailAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return repairsByMonth.size();
+            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").size();
         }
 
         @Override
-        public Repair getItem(int i) {
-            return repairsByMonth.get(i);
+        public Repairs.Repair getItem(int i) {
+            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").get(i);
         }
 
         @Override

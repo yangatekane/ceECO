@@ -27,6 +27,8 @@ public class ExportFragment extends DialogFragment {
     private BaseActivity baseActivity;
     private EquipmentAdapter equipmentAdapter;
     private EquipmentDetailAdapter equipmentDetailAdapter;
+    private double totalStocks = 0;
+
     public ExportFragment(Activity activity, ProgressDialog dialog){
         baseActivity = (BaseActivity) activity;
         dialog.dismiss();
@@ -35,6 +37,9 @@ public class ExportFragment extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Holo_Light_Dialog);
+        for (Stock stock:baseActivity.getStockManager().getStocks("newStocks").getStocks().get("commissioned")){
+            totalStocks = totalStocks + Double.valueOf(stock.getAmount().split(" ")[1]);
+        }
         equipmentAdapter = new EquipmentAdapter();
         equipmentDetailAdapter = new EquipmentDetailAdapter();
     }
@@ -48,7 +53,10 @@ public class ExportFragment extends DialogFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.file_view, container,false);
+        View footer = inflater.inflate(R.layout.stocks_footer,null);
+        ((TextView)footer.findViewById(R.id.txt_quantity_footer)).setText(String.valueOf(totalStocks));
         detialList = (ListView) view.findViewById(R.id.detail_list);
+        detialList.addFooterView(footer);
         detialList.setAdapter(equipmentDetailAdapter);
         getDialog().setTitle(getString(R.string.stock_list));
         return view;

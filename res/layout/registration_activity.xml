@@ -84,14 +84,15 @@
                                     android:padding="8dp"/>
                         </RelativeLayout>
                     </ViewFlipper>
-                    <ListView
-                            android:id="@+id/left_drawer"
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="start"
-                            android:choiceMode="singleChoice"
-                            android:padding="8dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/drawer_background"
-                            android:dividerHeight="0dp"/>
+    <ExpandableListView
+        android:id="@+id/left_drawer_stocks"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:indicatorRight="270dp"
+        android:childDivider="@drawable/line_separator"
+        android:background="@drawable/drawer_background"
+        android:dividerHeight="0dp"/>
 </android.support.v4.widget.DrawerLayout>

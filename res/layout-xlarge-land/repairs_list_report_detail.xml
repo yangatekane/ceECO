@@ -28,18 +28,22 @@
                     android:text="Serial No."
                     android:layout_marginTop="20dp"
                     style="@style/NormalText"
+                    android:textStyle="bold"
                     />
                 <EditText
                     android:id="@+id/edit_serial_number_report"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="8dp"/>
+                    android:layout_marginTop="8dp"
+                    style="@style/NormalText"
+                    />
                 <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="200dp"
                         android:text="Requisition Number(RP)"
                         android:layout_marginTop="8dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_requisition_number_report"
@@ -54,6 +58,7 @@
                         android:text="Section"
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_section_report"
@@ -76,6 +81,7 @@
                     android:text="Make"
                     android:layout_marginTop="20dp"
                     style="@style/NormalText"
+                    android:textStyle="bold"
                     />
                 <EditText
                     android:id="@+id/edit_make_report"
@@ -89,6 +95,7 @@
                         android:text="Telephone Number"
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_telephone_number_report"
@@ -103,6 +110,7 @@
                         android:text="Department"
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_department_report"
@@ -124,18 +132,21 @@
                     android:text="Model"
                     android:layout_marginTop="20dp"
                     style="@style/NormalText"
+                    android:textStyle="bold"
                     />
                 <EditText
                     android:id="@+id/edit_model_report"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="8dp"/>
+                    android:layout_marginTop="8dp"
+                    style="@style/NormalText"/>
                 <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="100dp"
                         android:text="Date"
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_date_report"
@@ -150,6 +161,7 @@
                         android:text="Floor"
                         android:layout_marginTop="20dp"
                         style="@style/NormalText"
+                        android:textStyle="bold"
                         />
                 <EditText
                         android:id="@+id/edit_floor_report"

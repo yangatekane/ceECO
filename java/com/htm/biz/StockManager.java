@@ -28,12 +28,12 @@ public class StockManager extends Manager{
     }
 
 
-    public void saveStock( String stockCategory,String repairType, String part_number, String description, int quantity, String amount) throws IOException, InstantiationException, IllegalAccessException {
+    public void saveStock(String stockCategory, String repairType, String part_number, String description, int quantity, String amount, String supplier, String date) throws IOException, InstantiationException, IllegalAccessException {
         Stocks s = getStocks(stockCategory);
         if (!s.getStocks().containsKey(repairType)){
             s.getStocks().put(repairType,new ArrayList<Stock>());
         }
-        s.getStocks().get(repairType).add(new Stock(part_number,description,quantity,amount));
+        s.getStocks().get(repairType).add(new Stock(part_number,description,quantity,amount,supplier,date));
         File stockFile = getFile(stockCategory, "stocks");
         if (!stockFile.exists()){
             stockFile.createNewFile();

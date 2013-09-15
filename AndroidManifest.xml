@@ -56,7 +56,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrationActivity"
+        <activity android:name=".StocksActivity"
                   android:label="@string/stock_registration"
                   android:theme="@style/AppTheme"/>
         <activity android:name=".BaseActivity"/>
@@ -217,6 +217,19 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity android:name=".AuditTrailsActivity" />
+        <activity android:name=".MakeActivity"/>
+        <activity android:name=".ModelActivity" />
+        <activity android:name=".SerialActivity" />
+        <activity android:name=".StockActivity"
+            android:label="Stock List"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".PartNumberActivity"
+            android:label="Part Numbers"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".DescriptionActivity"
+            android:label="Descriptions"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
