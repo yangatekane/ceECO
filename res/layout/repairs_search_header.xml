@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            style="@style/HeadingText"
+            android:text="Serial No"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            style="@style/HeadingText"
+            android:text="Make"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="240dp"
+            style="@style/HeadingText"
+            android:text="Date"
+            android:padding="8dp"/>
+    </TableRow>
+
+</TableLayout>

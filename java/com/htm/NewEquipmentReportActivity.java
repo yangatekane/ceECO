@@ -57,7 +57,7 @@ public class NewEquipmentReportActivity extends BaseActivity {
             ((TextView)view.findViewById(R.id.commissioned_date_new_report)).setText(getItem(i).getCdate());
             ((TextView)view.findViewById(R.id.invoice_date_new_report)).setText(getItem(i).getIdate());
             ((TextView)view.findViewById(R.id.qa_date_new_report)).setText(getItem(i).getQAdate());
-            
+
             return view;
         }
     }
