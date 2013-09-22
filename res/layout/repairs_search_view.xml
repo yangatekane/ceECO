@@ -22,8 +22,11 @@ android:padding="8dp">
     <TextView
         android:id="@+id/txt_date_search"
         android:layout_height="wrap_content"
-        android:layout_width="240dp"
+        android:layout_width="140dp"
         android:padding="8dp"/>
+    <CheckBox
+        android:id="@+id/existing_checkbox"
+        />
 </TableRow>
 
 </TableLayout>

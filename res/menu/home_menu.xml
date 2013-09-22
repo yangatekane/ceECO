@@ -4,6 +4,13 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
     <item
+        android:id="@+id/home_action_bar_notification"
+        android:icon="@drawable/action_bar_notification"
+        android:showAsAction="ifRoom"
+        android:title="@string/notifications_heading"
+        android:enabled="false"
+        />
+    <item
             android:id="@+id/home_action_graphs"
             android:icon="@drawable/action_band_latest_diagnostics"
             android:showAsAction="always"

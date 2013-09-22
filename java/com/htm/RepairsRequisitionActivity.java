@@ -119,7 +119,22 @@ public class RepairsRequisitionActivity extends BaseActivity {
                 }
                 drawer.put(group,reportsChildList);
             }else if (group.equalsIgnoreCase("By Make")){
-                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")!=null?getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Repairs.Repair repair = (Repairs.Repair)iterator.next();
                     if (!makeChildList.contains(repair.getMake()))
@@ -127,7 +142,22 @@ public class RepairsRequisitionActivity extends BaseActivity {
                 }
                 drawer.put(group,makeChildList);
             }else if (group.equalsIgnoreCase("By Model")){
-                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")!=null?getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Repairs.Repair repair = (Repairs.Repair)iterator.next();
                     if (!modelChildList.contains(repair.getModel()))
@@ -135,7 +165,22 @@ public class RepairsRequisitionActivity extends BaseActivity {
                 }
                 drawer.put(group,modelChildList);
             }else if (group.equalsIgnoreCase("By Serial")){
-                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator();
+                Iterator iterator = getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")!=null?getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Repairs.Repair repair = (Repairs.Repair)iterator.next();
                     if (!serialChildList.contains(repair.getSerialNo()))

@@ -49,6 +49,21 @@ public class RepairsRequisitionManager extends Manager {
         fileOut.close();
 
     }
+
+    public void updateRepair(String stockCategory,String repairType,Repair repair,int index) throws IOException {
+        Repairs s = getRequisitions(stockCategory);
+        //s.getRepairs().get(repairType).remove(index);
+        s.getRepairs().get(repairType).set(index,repair);
+        File stockFile = getFile(stockCategory, fileName);
+        if (!stockFile.exists()){
+            stockFile.createNewFile();
+        }
+        FileOutputStream fileOut = new FileOutputStream(stockFile);
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        out.writeObject(s);
+        out.close();
+        fileOut.close();
+    }
     public Repairs getRequisitions(String stockCategory){
         Repairs repairs=new Repairs();
         File objectsFile = getFile(stockCategory,fileName);

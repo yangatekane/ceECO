@@ -113,7 +113,22 @@ public class StocksActivity extends BaseActivity {
                 auditsChildList.add("Audits");
                 drawer.put(group,auditsChildList);
             }else if (group.equalsIgnoreCase("By Supplier")){
-                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator();
+                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned")!=null?getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Stocks.Stock stock = (Stocks.Stock)iterator.next();
                     if (!supplierChildList.contains(stock.getDescription()))
@@ -121,7 +136,22 @@ public class StocksActivity extends BaseActivity {
                 }
                 drawer.put(group, supplierChildList);
             }else if (group.equalsIgnoreCase("By Description")){
-                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator();
+                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned")!=null?getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Stocks.Stock stock = (Stocks.Stock)iterator.next();
                     if (!descriptionChildList.contains(stock.getDescription()))
@@ -129,7 +159,22 @@ public class StocksActivity extends BaseActivity {
                 }
                 drawer.put(group, descriptionChildList);
             }else if (group.equalsIgnoreCase("By Part Number")){
-                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator();
+                Iterator iterator = getStockManager().getStocks("newStocks").getStocks().get("commissioned")!=null?getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator():new Iterator() {
+                    @Override
+                    public boolean hasNext() {
+                        return false;
+                    }
+
+                    @Override
+                    public Object next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+
+                    }
+                };
                 while (iterator.hasNext()){
                     Stocks.Stock stock = (Stocks.Stock)iterator.next();
                     if (!partNumberChildList.contains(stock.getPart_number()))

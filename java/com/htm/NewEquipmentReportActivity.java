@@ -26,7 +26,7 @@ public class NewEquipmentReportActivity extends BaseActivity {
 
         @Override
         public int getCount() {
-            return getNewEquipmentManager().getNewEquipments("recievedEquipment").getNewEquiments().get("commissioned").size();
+            return getNewEquipmentManager().getNewEquipments("recievedEquipment").getNewEquiments().get("commissioned")!=null?getNewEquipmentManager().getNewEquipments("recievedEquipment").getNewEquiments().get("commissioned").size():0;
         }
 
         @Override

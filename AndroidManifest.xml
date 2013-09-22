@@ -230,6 +230,14 @@
         <activity android:name=".DescriptionActivity"
             android:label="Descriptions"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".RepairJobsActivity"
+            android:label="Available Jobs"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".JobsActivity"
+            android:label="Available Jobs"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

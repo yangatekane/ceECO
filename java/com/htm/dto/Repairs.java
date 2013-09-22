@@ -29,10 +29,19 @@ public class Repairs implements Serializable {
         private String section;
         private String floor;
         private String description;
+        private String job_status;
         private String department;
         private String reportedBy;
         private String receivedBy;
         private String barcode;
+
+        public String getJob_status() {
+            return job_status;
+        }
+
+        public void setJob_status(String job_status) {
+            this.job_status = job_status;
+        }
 
         public Repair(String serialNo, String make, String model,
                       int requisitionNumber, String tel, String date, String section,
@@ -50,6 +59,7 @@ public class Repairs implements Serializable {
             this.description = description;
             this.reportedBy = reportedBy;
             this.receivedBy = receivedBy;
+            this.job_status = "opened";
         }
 
         public String getSerialNo() {

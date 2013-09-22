@@ -45,9 +45,9 @@ public class ExistingEquipment extends BaseActivity {
         });
         listView = (ListView) findViewById(R.id.requisition_list);
         repairRequisitionDetailAdapter = new RepairRequisitionDetailAdapter();
-        listView.setAdapter(repairRequisitionDetailAdapter);
         View header = getLayoutInflater().inflate(R.layout.repairs_search_header,null);
         listView.addHeaderView(header);
+        listView.setAdapter(repairRequisitionDetailAdapter);
     }
 
    @Override
@@ -63,7 +63,7 @@ public class ExistingEquipment extends BaseActivity {
 
         @Override
         public int getCount() {
-            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").size();
+            return getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned")!=null?getRepairsRequisitionManager().getRequisitions("newRepairs").getRepairs().get("commissioned").size():0;
         }
 
         @Override

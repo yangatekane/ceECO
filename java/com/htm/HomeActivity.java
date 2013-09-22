@@ -47,12 +47,14 @@ public class HomeActivity extends BaseActivity {
         ((ImageView)findViewById(R.id.job_cards)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (repair.getText().toString().equalsIgnoreCase("")){
-                    newSave.show();
-                }else {
-                    newSave.dismiss();
-                    startActivity(new Intent(HomeActivity.this,JobCardsActivity.class).putExtra("myNumber",Integer.valueOf(repair.getText().toString())));
-                }
+                //if (repair!=null){
+                    //if (repair.getText().toString().equalsIgnoreCase("")){
+                        //newSave.show();
+                   // }else {
+                        //newSave.dismiss();
+                        startActivity(new Intent(HomeActivity.this,RepairJobsActivity.class));
+                    //}
+            //    }
             }
         });
     }

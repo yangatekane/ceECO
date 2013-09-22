@@ -19,6 +19,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import com.htm.dto.Parts;
 import com.htm.dto.Repairs.Repair;
 import com.htm.dto.Stocks.Stock;
 
@@ -29,7 +30,7 @@ import java.util.List;
 /**
  * Created by yanga on 2013/08/18.
  */
-public class SearchJobsResults extends BaseActivity {
+public class SearchJobsResults extends BaseActivity{
     private static final String TAG=SearchJobsResults.class.getName();
     private ListView listView;
     private RepairRequisitionDetailAdapter repairRequisitionDetailAdapter;
@@ -38,6 +39,25 @@ public class SearchJobsResults extends BaseActivity {
     public AlertDialog stockSave;
     List<Stock> allstock = new LinkedList<Stock>();
     private JobCardAdapter jobCardAdapter;
+    private TextView job_description;
+    private TextView job_qantity;
+    private TextView job_partNumber;
+    private TextView job_fault;
+    private TextView job_amount;
+    private Spinner spin_status;
+
+    private Spinner day;
+    private Spinner month;
+    private Spinner year;
+
+    private EditText technician;
+    private EditText contactPerson;
+    private EditText requistionNo;
+    private EditText job_make;
+    private EditText job_barcode;
+    private EditText job_model;
+    private EditText job_serialNo;
+    private Parts parts;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_list_job_detail);
@@ -47,7 +67,28 @@ public class SearchJobsResults extends BaseActivity {
                 resultList.add(repair);
             }
         }
-        ((EditText)findViewById(R.id.edit_serial_no)).setText(resultList.get(0).getSerialNo());
+        job_description = (TextView)findViewById(R.id.job_description);
+        job_qantity = (TextView)findViewById(R.id.job_quantity);
+        job_partNumber = (TextView)findViewById(R.id.job_partnumber);
+        job_amount = (TextView)findViewById(R.id.job_price);
+        job_fault = (TextView)findViewById(R.id.edit_job_done_description);
+        spin_status = (Spinner)findViewById(R.id.spin_status);
+
+        day = (Spinner)findViewById(R.id.spin_repair_day);
+        month = (Spinner)findViewById(R.id.spin_repair_month);
+        year = (Spinner)findViewById(R.id.spin_repair_year);
+
+        technician = (EditText)findViewById(R.id.edit_customer);
+        contactPerson = (EditText)findViewById(R.id.edit_contact_person);
+        requistionNo = (EditText)findViewById(R.id.edit_srequisition_no);
+        job_make = (EditText)findViewById(R.id.edit_make);
+        job_barcode = (EditText)findViewById(R.id.edit_barcode_no);
+        job_model = (EditText)findViewById(R.id.edit_model);
+        job_serialNo = (EditText)findViewById(R.id.edit_serial_no);
+
+        parts = new Parts();
+
+        ((EditText) findViewById(R.id.edit_serial_no)).setText(resultList.get(0).getSerialNo());
         ((EditText)findViewById(R.id.edit_srequisition_no)).setText(String.valueOf(resultList.get(0).getRequisitionNumber()));
         ((EditText)findViewById(R.id.edit_make)).setText(resultList.get(0).getMake());
         ((EditText)findViewById(R.id.edit_model)).setText(resultList.get(0).getModel());
@@ -70,21 +111,41 @@ public class SearchJobsResults extends BaseActivity {
                         stockSave.dismiss();
                     }
                 }).create();
+        ((Button)findViewById(R.id.btn_add)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Parts.Part part = new Parts.Part(job_partNumber.getText().toString(),job_description.getText().toString(),Integer.valueOf(job_qantity.getText().toString()),job_amount.getText().toString());
+                parts.getParts().add(part);
+                showToast(SearchJobsResults.this, "Part Added");
+                job_amount.setText("");
+                job_partNumber.setText("");
+                job_qantity.setText("");
+                job_description.setText("");
+            }
+        });
         ((Button)findViewById(R.id.btn_next)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                        getStockManager().saveJobs("newJobs","commissioned",allstock.get(stocks.getSelectedItemPosition()).getPartNumber(),
-                                allstock.get(stocks.getSelectedItemPosition()).getDescription(),
-                                -allstock.get(stocks.getSelectedItemPosition()).getQuantity(),allstock.get(stocks.getSelectedItemPosition()).getAmount());
-                        stockSave.setMessage("Stock information saved....");
-                        stockSave.show();
+                    String date = String.valueOf(day.getSelectedItem()) + " " + String.valueOf(month.getSelectedItem()) + " " + String.valueOf(year.getSelectedItem());
+                    String status = String.valueOf(spin_status.getSelectedItem());
+                    getStockManager().saveJobs("newJobs", "commissioned", parts,
+                            date,
+                            status,
+                            job_fault.getText().toString(),
+                            job_serialNo.getText().toString(),
+                            job_make.getText().toString(),
+                            job_model.getText().toString(),
+                            contactPerson.getText().toString(),
+                            requistionNo.getText().toString());
+                    stockSave.setMessage("Stock information saved....");
+                    stockSave.show();
                 } catch (IOException e) {
                     stockSave.setMessage("failed to save stock information!");
                     stockSave.show();
                     Log.e(TAG, e.getMessage(), e);
                 } catch (InstantiationException e) {
-                    Log.e(TAG,e.getMessage(),e);
+                    Log.e(TAG, e.getMessage(), e);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
