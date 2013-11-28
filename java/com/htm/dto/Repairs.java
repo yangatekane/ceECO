@@ -34,6 +34,15 @@ public class Repairs implements Serializable {
         private String reportedBy;
         private String receivedBy;
         private String barcode;
+        private String serviceDate;
+
+        public String getServiceDate() {
+            return serviceDate;
+        }
+
+        public void setServiceDate(String serviceDate) {
+            this.serviceDate = serviceDate;
+        }
 
         public String getJob_status() {
             return job_status;

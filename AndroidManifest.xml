@@ -49,7 +49,8 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name"
-            android:configChanges="keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -238,6 +239,12 @@
         <activity android:name=".JobsActivity"
             android:label="Available Jobs"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".RepairsRequisitionAutoActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:label="@string/repairs"/>
+        <activity android:name=".JobsBySerialActivity" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="horizontal"
+    android:id="@+id/existing_header_state"
     android:padding="8dp">
     <TableRow
         android:layout_width="match_parent"

@@ -16,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +26,7 @@ import android.widget.ViewFlipper;
 
 import com.htm.dto.Repairs;
 import com.htm.dto.Stocks;
-import com.htm.fragments.ExportFragment;
+import com.htm.fragments.StocksFragment;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -348,7 +347,7 @@ public class StocksActivity extends BaseActivity {
             ft.remove(fragment);
         }
         ft.addToBackStack(null);
-        DialogFragment contentFragment = new ExportFragment(StocksActivity.this, dialog);
+        DialogFragment contentFragment = new StocksFragment(StocksActivity.this, dialog);
         contentFragment.show(ft,"dialog");
     }
 }

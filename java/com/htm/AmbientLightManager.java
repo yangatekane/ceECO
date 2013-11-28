@@ -27,12 +27,6 @@ import android.preference.PreferenceManager;
 import com.htm.camera.CameraManager;
 import com.htm.camera.FrontLightMode;
 
-/**
- * Detects ambient light and switches on the front light when very dark, and off again when sufficiently light.
- *
- * @author Sean Owen
- * @author Nikolaus Huber
- */
 final class AmbientLightManager implements SensorEventListener {
 
   private static final float TOO_DARK_LUX = 45.0f;
@@ -81,7 +75,6 @@ final class AmbientLightManager implements SensorEventListener {
 
   @Override
   public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    // do nothing
   }
 
 }

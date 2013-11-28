@@ -110,43 +110,8 @@ public class RepairJobsActivity extends BaseActivity {
         });
     }
 
-    private ActionMode.Callback actionMode = new ActionMode.Callback() {
-        @Override
-        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-            mode.getMenuInflater().inflate(R.menu.reader_context_action_bar, menu);
-            return false;
-        }
-
-        @Override
-        public boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
-            return false;
-        }
-
-        @Override
-        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.discussItem:
-                    mode.finish();
-                    return true;
-                case R.id.searchItem:
-                    mode.finish();
-                    return true;
-                case R.id.bookmarkItem:
-                    mode.finish();
-                    return true;
-                default:
-                    return true;
-            }
-        }
-
-        @Override
-        public void onDestroyActionMode(ActionMode actionMode) {
-
-        }
-    };
-
     private void setupDrawer() {
-        for(String group:getResources().getStringArray(R.array.drawer_list_stocks)){
+        for(String group:getResources().getStringArray(R.array.drawer_list_jobs)){
 
             if (group.equalsIgnoreCase("Audit Trail")){
                 auditsChildList.add("Audits");
@@ -169,7 +134,7 @@ public class RepairJobsActivity extends BaseActivity {
                     }
                 };
                 drawer.put(group, supplierChildList);
-            }else if (group.equalsIgnoreCase("By Description")){
+            }else if (group.equalsIgnoreCase("By Serial")){
                 Iterator iterator = getStockManager().getJobs("newStocks").getJobs().get("commissioned")!=null?getStockManager().getStocks("newStocks").getStocks().get("commissioned").iterator():new Iterator() {
                     @Override
                     public boolean hasNext() {

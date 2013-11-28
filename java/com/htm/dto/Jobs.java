@@ -27,6 +27,16 @@ public class Jobs implements Serializable {
         private String serialNo;
         private String make;
         private String model;
+
+        public String getTechnician() {
+            return technician;
+        }
+
+        public void setTechnician(String technician) {
+            this.technician = technician;
+        }
+
+        private String technician;
         private String contactPerson;
         private String requisitionNo;
         private Parts parts;
@@ -94,13 +104,14 @@ public class Jobs implements Serializable {
         }
 
         public Job(Parts parts,String date, String status, String fault_description,
-                   String serialNo,String make,String model,String contactPerson,String requisitionNo) {
+                   String serialNo,String make,String model,String technician,String contactPerson,String requisitionNo) {
             this.date = date;
             this.status = status;
             this.fault_description = fault_description;
             this.serialNo = serialNo;
             this.make = make;
             this.model = model;
+            this.technician = technician;
             this.contactPerson = contactPerson;
             this.requisitionNo = requisitionNo;
             this.parts = parts;

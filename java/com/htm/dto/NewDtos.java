@@ -54,6 +54,16 @@ public class NewDtos implements Serializable {
         private String QAdate;
         private String Sdate;
 
+        public String getServiceDate() {
+            return serviceDate;
+        }
+
+        public void setServiceDate(String serviceDate) {
+            this.serviceDate = serviceDate;
+        }
+
+        private String serviceDate;
+
         public NewDto(String hospital,String location,String tradeworld,
                       String Rdate, String Idate, String Cdate, String Wdate, String QAdate, String Sdate,
                       String serialNo, String device, String make, String model){

@@ -2,7 +2,6 @@ package com.htm.fragments;
 
 import android.app.Activity;
 import android.app.DialogFragment;
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,25 +10,20 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
 import com.htm.BaseActivity;
 import com.htm.R;
 import com.htm.dto.Repairs;
 import com.htm.dto.RepairsTotal;
-import com.htm.dto.Stocks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by yanga on 2013/09/14.
  */
 public class TotalsFragment extends DialogFragment {
-    final static String TAG = ExportFragment.class.getName();
+    final static String TAG = StocksFragment.class.getName();
     private View view;
     private ListView listView;
     private ListView detialList;

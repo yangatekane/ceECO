@@ -1,16 +1,13 @@
 package com.htm;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -136,8 +133,9 @@ public class SearchJobsResults extends BaseActivity{
                             job_serialNo.getText().toString(),
                             job_make.getText().toString(),
                             job_model.getText().toString(),
-                            contactPerson.getText().toString(),
-                            requistionNo.getText().toString());
+                            requistionNo.getText().toString(), technician.getText().toString(),
+                            contactPerson.getText().toString()
+                    );
                     stockSave.setMessage("Stock information saved....");
                     stockSave.show();
                 } catch (IOException e) {

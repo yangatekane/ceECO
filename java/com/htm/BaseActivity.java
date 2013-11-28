@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.htm.biz.LogonManager;
 import com.htm.biz.NewDtoManager;
 import com.htm.biz.RepairsRequisitionManager;
+import com.htm.biz.ServiceManager;
 import com.htm.biz.StockManager;
 
 /**
@@ -37,6 +38,9 @@ public class BaseActivity extends FragmentActivity {
     }
     public RepairsRequisitionManager getRepairsRequisitionManager(){
         return getCeECOApplication().getRepairsRequisitionManager();
+    }
+    public ServiceManager getServiceManager(){
+        return getCeECOApplication().getServiceManager();
     }
     public void showToast(Context context, String message) {
         LayoutInflater inflater = getLayoutInflater();

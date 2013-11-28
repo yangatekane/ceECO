@@ -59,8 +59,9 @@ public class JobsActivity extends BaseActivity {
                 view = getLayoutInflater().inflate(R.layout.jobs_detail_view,null);
             }
             int index=0;
-            ((TextView)view.findViewById(R.id.edit_customer)).setText(getItem(i).getContactPerson());
-            ((TextView)view.findViewById(R.id.edit_srequisition_no)).setText(getItem(i).getRequisitionNo());
+            ((TextView)view.findViewById(R.id.edit_customer)).setText(getItem(i).getRequisitionNo());
+            ((TextView)view.findViewById(R.id.edit_contact_person)).setText(getItem(i).getContactPerson());
+            ((TextView)view.findViewById(R.id.edit_srequisition_no)).setText(getItem(i).getTechnician());
             ((TextView)view.findViewById(R.id.edit_make)).setText(getItem(i).getMake());
             ((TextView)view.findViewById(R.id.edit_serial_no)).setText(getItem(i).getSerialNo());
             ((TextView)view.findViewById(R.id.edit_model)).setText(getItem(i).getModel());
@@ -91,7 +92,7 @@ public class JobsActivity extends BaseActivity {
                         ((TextView)view.findViewById(R.id.txt_amount_third)).setText(part.getAmount());
                         break;
                     case 3:
-                        ((TableRow)view.findViewById(R.id.fifth_row)).setVisibility(View.VISIBLE);
+                        ((TableRow)view.findViewById(R.id.fourth_row)).setVisibility(View.VISIBLE);
                         ((TextView)view.findViewById(R.id.txt_part_number_fourth)).setText(part.getPart_number());
                         ((TextView)view.findViewById(R.id.txt_description_fourth)).setText(part.getDescription());
                         ((TextView)view.findViewById(R.id.txt_quantity_fourth)).setText(String.valueOf(part.getQuantity()));
@@ -103,6 +104,34 @@ public class JobsActivity extends BaseActivity {
                         ((TextView)view.findViewById(R.id.txt_description_fifth)).setText(part.getDescription());
                         ((TextView)view.findViewById(R.id.txt_quantity_fifth)).setText(String.valueOf(part.getQuantity()));
                         ((TextView)view.findViewById(R.id.txt_amount_fifth)).setText(part.getAmount());
+                        break;
+                    case 5:
+                        ((TableRow)view.findViewById(R.id.sixth_row)).setVisibility(View.VISIBLE);
+                        ((TextView)view.findViewById(R.id.txt_part_number_sixth)).setText(part.getPart_number());
+                        ((TextView)view.findViewById(R.id.txt_description_sixth)).setText(part.getDescription());
+                        ((TextView)view.findViewById(R.id.txt_quantity_sixth)).setText(String.valueOf(part.getQuantity()));
+                        ((TextView)view.findViewById(R.id.txt_amount_sixth)).setText(part.getAmount());
+                        break;
+                    case 6:
+                        ((TableRow)view.findViewById(R.id.seventh_row)).setVisibility(View.VISIBLE);
+                        ((TextView)view.findViewById(R.id.txt_part_number_seventh)).setText(part.getPart_number());
+                        ((TextView)view.findViewById(R.id.txt_description_seventh)).setText(part.getDescription());
+                        ((TextView)view.findViewById(R.id.txt_quantity_seventh)).setText(String.valueOf(part.getQuantity()));
+                        ((TextView)view.findViewById(R.id.txt_amount_seventh)).setText(part.getAmount());
+                        break;
+                    case 7:
+                        ((TableRow)view.findViewById(R.id.eighth_row)).setVisibility(View.VISIBLE);
+                        ((TextView)view.findViewById(R.id.txt_part_number_eighth)).setText(part.getPart_number());
+                        ((TextView)view.findViewById(R.id.txt_description_eighth)).setText(part.getDescription());
+                        ((TextView)view.findViewById(R.id.txt_quantity_eighth)).setText(String.valueOf(part.getQuantity()));
+                        ((TextView)view.findViewById(R.id.txt_amount_eighth)).setText(part.getAmount());
+                        break;
+                    case 8:
+                        ((TableRow)view.findViewById(R.id.nineth_row)).setVisibility(View.VISIBLE);
+                        ((TextView)view.findViewById(R.id.txt_part_number_nineth)).setText(part.getPart_number());
+                        ((TextView)view.findViewById(R.id.txt_description_nineth)).setText(part.getDescription());
+                        ((TextView)view.findViewById(R.id.txt_quantity_nineth)).setText(String.valueOf(part.getQuantity()));
+                        ((TextView)view.findViewById(R.id.txt_amount_nineth)).setText(part.getAmount());
                         break;
                     default:
                         break;

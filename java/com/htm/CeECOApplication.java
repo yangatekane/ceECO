@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.htm.biz.LogonManager;
 import com.htm.biz.NewDtoManager;
 import com.htm.biz.RepairsRequisitionManager;
+import com.htm.biz.ServiceManager;
 import com.htm.biz.StockManager;
 
 /**
@@ -23,6 +24,7 @@ public class CeECOApplication extends Application {
     private StockManager stockManager;
     private NewDtoManager newEquipmentManager;
     private RepairsRequisitionManager repairsRequisitionManager;
+    private ServiceManager serviceManager;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -30,6 +32,7 @@ public class CeECOApplication extends Application {
         stockManager = new StockManager(this);
         newEquipmentManager = new NewDtoManager(this);
         repairsRequisitionManager = new RepairsRequisitionManager(this);
+        serviceManager = new ServiceManager(this);
     }
     public LogonManager getLogonManager(){
         return logonManager;
@@ -42,6 +45,9 @@ public class CeECOApplication extends Application {
     }
     public RepairsRequisitionManager getRepairsRequisitionManager(){
         return repairsRequisitionManager;
+    }
+    public ServiceManager getServiceManager(){
+        return serviceManager;
     }
 
 }

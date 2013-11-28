@@ -71,15 +71,14 @@ public class StockManager extends Manager{
         }
         return stocks;
     }
-    public void saveJobs( String stockCategory,String repairType, Parts parts,String date,String status, String fault,
-                          String serialNo,String make,String model,String contactPerson,
-                          String requisitionNo) throws IOException, InstantiationException, IllegalAccessException {
+    public void saveJobs(String stockCategory, String repairType, Parts parts, String date, String status, String fault,
+                         String serialNo, String make, String model, String technician, String requisitionNo, String contactPerson) throws IOException, InstantiationException, IllegalAccessException {
         Jobs j = getJobs(stockCategory);
         if (!j.getJobs().containsKey(repairType)){
             j.getJobs().put(repairType, new ArrayList<Jobs.Job>());
         }
         j.getJobs().get(repairType).add(new Jobs.Job(parts,date,status,fault,
-                serialNo,make,model,contactPerson,requisitionNo));
+                serialNo,make,model,technician,contactPerson,requisitionNo));
         File stockFile = getFile(stockCategory, "jobs");
         if (!stockFile.exists()){
             stockFile.createNewFile();
