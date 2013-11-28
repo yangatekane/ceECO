@@ -12,8 +12,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
-
 import com.htm.dto.Stocks;
 
 import java.util.List;
